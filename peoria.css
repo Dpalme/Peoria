@@ -1,0 +1,341 @@
+/* PEORIA 02.01.2020 */
+/* Diego Palmerin Bonada */
+/* Global Variables */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+
+:root {
+	--bg: #eaeaea;
+	--bg2: #c8c8c8;
+	--bg3: #aeaeae;
+	--font: #121212;
+	--accent: #1D54B9;
+	--accent2: #1DB954;
+}
+
+*{
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--font);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+	font-size: 1rem;
+}
+
+a {
+	margin: auto;
+	text-decoration: none;
+	color: var(--font);
+	cursor: pointer;
+	outline: 0;
+	padding: 0.7rem 0;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+p {
+	position: relative;
+	font-size: 1.2rem;
+	text-align: justify;
+	text-justify: auto;
+	width: 95%;
+	margin: auto;
+	padding: .5rem 0;
+}
+
+h6 {
+	font-size: 1rem;
+	margin: auto;
+}
+
+h4 {
+	font-size: 1.5rem;
+	margin: auto;
+	margin-left: 15vw;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-left: 5vw;
+	margin-top: 0.2vw;
+	margin-bottom: 0.2vw;
+}
+
+h2::after {
+	position: absolute;
+	background: var(--accent);
+	width: 40px;
+	height: 10px;
+}
+
+h1 {
+	background: linear-gradient(
+		90deg,
+		var(--accent2),
+		var(--accent),
+		var(--accent),
+		var(--accent2)
+	);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 100;
+	font-size: 7rem;
+	margin-left: 5vw;
+	margin-top: 0.2vw;
+	margin-bottom: 0.2vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+	position: static;
+	width: 100%;
+	padding: 1rem 0rem 0 0;
+	margin-bottom: 5vw;
+}
+
+header h3 {
+	display: inline;
+	font-size: 1rem;
+	margin: 0;
+}
+
+footer {
+	width: 90%;
+	margin: auto;
+	padding: 2% 5%;
+	background: var(--bg3);
+	bottom: 0;
+	position: sticky;
+	display: flex;
+	flex-direction: row;
+}
+
+footer h3 {
+    display: inline;
+}
+
+main {
+	padding: 0vw 3vw 1vw 3vw;
+	margin: auto;
+	width: 85%;
+}
+
+footer div li {
+    margin: .4rem auto;
+    width: 90%;
+}
+
+/* Selection */
+
+::-moz-selection {
+	background: var(--bg);
+	color: var(--font);
+}
+
+:focus {
+	background: var(--bg);
+	color: var(--font);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #151515;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #151515;
+}
+
+/* Classes */
+
+.nav-links {
+	display: flex;
+	list-style: none;
+    width: 100%;
+    padding: 0;
+    background: var(--bg2);
+    border-top: solid 4px var(--accent);
+}
+
+.nav-links li {
+    margin: auto;
+}
+
+.header-link {
+    display: block;
+	margin: .5rem auto;
+	padding: .25rem .5rem;
+	text-decoration: none;
+	color: var(--font);
+	font-size: 1rem;
+	outline: 0;
+}
+
+.header-link:hover{
+	color: var(--accent);
+}
+
+.header-link:focus { 
+	border: solid 1px var(--accent);
+}
+
+.selected { color: var(--accent);}
+
+.topDiv {
+    display: flex;  
+    flex-direction: row;
+	padding: 0.125rem 0 1.25rem;
+	margin-left: 5vw;
+}
+
+.topDiv img {
+    height: 6rem;
+}
+
+.logo {
+	display: block;
+	color: var(--font);
+	font-size: 3rem;
+	margin: 0;
+}
+
+.logo:hover, .logo {
+	user-select: none;
+	animation: none;
+}
+
+.text-primary {
+	color: var(--accent);
+	margin: 0;
+}
+
+.separation {
+	margin-bottom: 3rem;
+}
+
+.row {
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.contact_form {
+	display: flex;
+	flex-direction: row;
+}
+
+.contact_form a {
+	padding: 1rem;
+	margin: 1rem auto;
+	border: solid 1px var(--accent);
+	background: linear-gradient(to right, var(--accent) 65%, transparent 65%);
+    background-size: 300% 100%;
+    background-position:right bottom;
+	transition:all .5s ease;
+}
+
+.contact_form a:hover,
+.contact_form a:focus { background-position: left bottom;}
+
+/* Mobile */
+
+@media screen and (max-width: 1100px) {
+    nav {
+		position: relative;
+	}
+
+    main {
+		padding: 0vw 3vw 1vw 3vw;
+		margin: auto;
+		width: 90%;
+		margin-right: auto;
+    }
+    
+	.logo {
+		font-size: 2rem;
+	}
+
+	.topDiv h3 {
+		font-size: .7rem;
+	}
+	.row {
+		flex-direction: column;
+		max-width: 90%;
+	}
+
+	.line {
+		background: var(--accent);
+		width: 30px;
+		height: 3px;
+		margin: 5px;
+	}
+
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 10%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+	}
+
+	.nav-links {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+        display: none;
+	}
+
+	.header-link {
+		font-size: 4rem;
+	}
+
+	.nav-links li {
+		margin: 2rem 0;
+	}
+
+	.nav-links.open {
+		display: block;
+		background: var(--bg);
+		z-index: 1;
+	}
+
+	.column {
+		max-width: 100%;
+	}
+}
