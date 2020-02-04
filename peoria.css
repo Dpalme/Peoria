@@ -1,9 +1,11 @@
 /* PEORIA 02.01.2020 */
 /* Diego Palmerin Bonada */
-/* Global Variables */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
 
+/* Global Variables */
+
+/* INITIAL VALUES
 :root {
 	--bg: #eaeaea;
 	--bg2: #c8c8c8;
@@ -11,7 +13,21 @@
 	--font: #121212;
 	--accent: #1D54B9;
 	--accent2: #1DB954;
+	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
 }
+*/
+
+:root {
+	--bg: #121212;
+	--bg2: #060606;
+	--bg3: #181818;
+	--font: #eaeaea;
+	--accent: #1D54B9;
+	--accent2: #1DB954;
+	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Start of Style Sheet */
 
 *{
 	margin: 0;
@@ -25,9 +41,37 @@ html {
 body {
 	background-color: var(--bg);
 	color: var(--font);
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: var(--font-face);
     font-weight: 400;
 	font-size: 1rem;
+}
+
+h1 {
+	color: var(--accent);
+	font-weight: 100;
+	font-size: 7rem;
+	margin: 0.2vw auto 0.2vw 5vw;
+}
+
+h2 {
+	font-size: 3rem;
+	margin: auto;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+h4 {
+	font-size: 1.5rem;
+	margin: auto auto auto 15vw;
+}
+
+h6 {
+	font-size: 1rem;
+	margin: auto;
 }
 
 a {
@@ -53,56 +97,6 @@ p {
 	padding: .5rem 0;
 }
 
-h6 {
-	font-size: 1rem;
-	margin: auto;
-}
-
-h4 {
-	font-size: 1.5rem;
-	margin: auto;
-	margin-left: 15vw;
-}
-
-h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem auto;
-}
-
-h2 {
-	font-size: 3rem;
-	margin-left: 5vw;
-	margin-top: 0.2vw;
-	margin-bottom: 0.2vw;
-}
-
-h2::after {
-	position: absolute;
-	background: var(--accent);
-	width: 40px;
-	height: 10px;
-}
-
-h1 {
-	background: linear-gradient(
-		90deg,
-		var(--accent2),
-		var(--accent),
-		var(--accent),
-		var(--accent2)
-	);
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	font-weight: 100;
-	font-size: 7rem;
-	margin-left: 5vw;
-	margin-top: 0.2vw;
-	margin-bottom: 0.2vw;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -124,24 +118,41 @@ footer {
 	padding: 2% 5%;
 	background: var(--bg3);
 	bottom: 0;
-	position: sticky;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+}
+
+footer h2 {
+	font-size: 1.8rem;
 }
 
 footer h3 {
-    display: inline;
+	display: inline;
+	font-size: 1.5rem;
 }
 
-main {
-	padding: 0vw 3vw 1vw 3vw;
+footer a {
+	font-size: 1rem;
+}
+
+footer div span{
+	width: 90%;
 	margin: auto;
-	width: 85%;
+	flex-direction: row !important;
+	flex-wrap: wrap;
 }
 
 footer div li {
-    margin: .4rem auto;
-    width: 90%;
+	display: inline-block;
+	flex: auto;
+	margin: .4rem 0;
+	width: 50%;
+}
+
+main {
+	padding: 0vw 1vw;
+	margin: auto;
+	width: 95%;
 }
 
 /* Selection */
