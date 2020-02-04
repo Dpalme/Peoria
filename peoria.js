@@ -44,6 +44,20 @@ function object(options) {
 }
 
 /**
+ * Function that adds the selected class to a specific header item and removes it from the rest.
+ *
+ * @param {string} menuId The id of the menu option.
+ *
+ * @example activateMenu("menu");
+ */
+function activateMenu(menuId) {
+	sections.forEach(tag => {
+		document.getElementById(tag).classList.remove("selected");
+	});
+	document.getElementById(menuId).classList.add("selected");
+}
+
+/**
  * Function to append as a child an element to another one given it's id.
  *
  * @param {string} parent The id of the parent object.
@@ -70,7 +84,8 @@ function createHeaderOption(text) {
 			innerText: text.toUpperCase(),
 			tabindex: "0"
 		}),
-		onclick: text.toLowerCase() + "(), navLinks.classList.toggle('open')"
+		onclick: text.toLowerCase() + "()",
+		id: text
 	});
 }
 
@@ -139,62 +154,67 @@ function start() {
  * @param {headerOptions} options
  */
 function header(options) {
-	document.body.appendChild(object({ type: "header", id: "header" }));
-
-	// Hamburger
-
-	append(
-		"header",
+	document.body.appendChild(
 		object({
-			type: "div",
-			classList: "hamburger",
-			onclick: "navLinks.classList.toggle('open')",
-			children: [
-				object({ type: "div", classList: "line" }),
-				object({ type: "div", classList: "line" }),
-				object({ type: "div", classList: "line" })
-			]
+			type: "header",
+			id: "header",
+			child: object({
+				type: "div",
+				classList: "hamburger",
+				children: [
+					object({ type: "div", classList: "line" }),
+					object({ type: "div", classList: "line" }),
+					object({ type: "div", classList: "line" })
+				]
+			})
 		})
 	);
 
 	// Logo
 
-	topDiv = object({ type: "div", classList: "topDiv" });
+	if (options.logo) {
+		topDiv = object({ type: "div", classList: "topDiv" });
+		if (options.logo.image !== undefined)
+			topDiv.appendChild(object({ type: "img", src: options.logo.image }));
+		span = object({ type: "span", classList: "collumn" });
 
-	if (options.logo.image !== undefined)
-		topDiv.appendChild(object({ type: "img", src: options.logo.image }));
-	span = object({ type: "span", classList: "collumn" });
+		if (options.logo.main !== undefined) {
+			logo = object({
+				type: "a",
+				classList: "logo",
+				innerText: options.logo.main,
+				onclick: sections[0] + "()"
+			});
+			if (options.logo.secondary !== undefined)
+				logo.appendChild(
+					object({
+						type: "span",
+						classList: "text-primary",
+						innerText: options.logo.secondary
+					})
+				);
+			span.appendChild(logo);
+		}
+		topDiv.append(span);
 
-	if (options.logo.main !== undefined) {
-		logo = object({
-			type: "a",
-			classList: "logo",
-			innerText: options.logo.main
-		});
-		if (options.logo.secondary !== undefined)
-			logo.appendChild(
-				object({
-					type: "span",
-					classList: "text-primary",
-					innerText: options.logo.secondary
-				})
-			);
-		span.appendChild(logo);
+		if (options.logo.under !== undefined) {
+			span.appendChild(object({ type: "h3", innerText: options.logo.under }));
+		}
+		append("header", topDiv);
 	}
-	topDiv.append(span);
-
-	if (options.logo.under !== undefined)
-		span.appendChild(object({ type: "h3", innerText: options.logo.under }));
 
 	//Navigation Links
 
-	navLinks = object({ type: "ul", classList: "nav-links" });
+	navLinks = object({
+		type: "ul",
+		classList: "nav-links",
+		onclick: "navLinks.classList.toggle('open')"
+	});
 	options.links.forEach(text => {
 		navLinks.appendChild(createHeaderOption(text));
 	});
 
 	//Append the items to content
-	append("header", topDiv);
 	append("header", navLinks);
 }
 
