@@ -324,7 +324,7 @@ b 													{ color: var(--black); }
 .container-top-margin {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 	box-sizing: border-box; }
@@ -339,6 +339,8 @@ b 													{ color: var(--black); }
 .left 											{ left: 0; }
 
 .full-height								{ height: 100%; }
+.half-width									{ height: 50%; }
+.quarter-width							{ height: 25%; }
 
 .inline 										{ display: inline; }
 .block											{ display: block; }
