@@ -339,8 +339,8 @@ b 													{ color: var(--black); }
 .left 											{ left: 0; }
 
 .full-height								{ height: 100%; }
-.half-width									{ height: 50%; }
-.quarter-width							{ height: 25%; }
+.half-width									{ width: 50%; }
+.quarter-width							{ width: 25%; }
 
 .inline 										{ display: inline; }
 .block											{ display: block; }
