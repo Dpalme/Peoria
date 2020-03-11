@@ -25,22 +25,25 @@
 		- Absolute
 		- Color
 	- Media Queries
- */
+*/
 
- @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap');
 
- @font-face {
+@font-face {
 	font-family: 'Gotham';
-	src: url('../fonts/gotham/GothamBook.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/gotham/GothamBook.woff') format('woff'),
-		/* Pretty Modern Browsers */ url('../fonts/gotham/GothamBook.ttf') format('truetype'); /* Safari, Android, iOS */
-		font-weight: 500;
+	src:
+		url('../fonts/gotham/GothamBook.woff2') format('woff2'), 		/* Super Modern Browsers */ 
+		url('../fonts/gotham/GothamBook.woff') 	format('woff'), 		/* Pretty Modern Browsers */ 
+		url('../fonts/gotham/GothamBook.ttf') 	format('truetype'); /* Safari, Android, iOS */
+	font-weight: 500;
 }
 @font-face {
 	font-family: 'Gotham';
-	src: url('../fonts/gotham/Gotham-Light.woff2') format('woff2'),
-		/* Super Modern Browsers */ url('../fonts/gotham/Gotham-Light.woff') format('woff'),
-		/* Pretty Modern Browsers */ url('../fonts/gotham/Gotham-Light.ttf') format('truetype'); /* Safari, Android, iOS */
-		font-weight: 400;
+	src:
+		url('../fonts/gotham/Gotham-Light.woff2') format('woff2'), 		/* Super Modern Browsers */
+		url('../fonts/gotham/Gotham-Light.woff') 	format('woff'), 		/* Pretty Modern Browsers */
+		url('../fonts/gotham/Gotham-Light.ttf') 	format('truetype'); /* Safari, Android, iOS */
+	font-weight: 400;
 }
 
 :root {
@@ -70,7 +73,7 @@
 
 	/* Fonts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-	--font-face: "Gotham", "Arial", "Helvetica", sans-serif;
+	--font-face: "Roboto Mono", "Courier New", Courier, monospace;
 
 	/* Grid values
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -278,8 +281,9 @@ footer div a:visited 				{ color: var(--white); }
 .line {
 	background: var(--black);
 	width: 30px;
-	height: 3px;
-	margin: 5px; }
+	height: 1px;
+	margin: 7px;
+	transform: translateY(50%); }
 .hamburger {
 	position: absolute;
 	cursor: pointer;
@@ -288,7 +292,7 @@ footer div a:visited 				{ color: var(--white); }
 	z-index: 2; }
 .hamburger:hover .line 					{ background: var(--mid-gray); }
 .hamburger.active:hover .line 	{ background: var(--red); }
-.hamburger.active .line 				{ background: var(--red); }
+.nav-links.open + .hamburger.active .line{ backgro und: var(--red); }
 
 /* Navigation Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -311,27 +315,27 @@ footer div a:visited 				{ color: var(--white); }
 	margin: var(--col) 0;
 	list-style: none;
 	text-align: center; }
-.header-link {
+.header-link,
+.header-link:hover,
+.header-link:active,
+.header-link:focus {
 	font-size: 36px;
 	line-height: 48px;
 	text-decoration: none;
 	display: block;
 	color: var(--white); }
-.header-link:hover { color: var(--white); }
-.header-link:focus {
-	background: transparent;
-	border: solid 1px var(--blue); }
-
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.container,
+.container-top-margin {
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: var(--double-col) auto;
+  margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+	box-sizing: border-box; }
+.container-top-margin 			{ margin: var(--double-col) auto; }
 .column,
 .columns {
   width: 100%;
