@@ -22,6 +22,7 @@
 		- Text
 		- Flex
 		- Margins
+		- Paddings
 		- Absolute
 		- Color
 	- Media Queries
@@ -134,7 +135,9 @@ a:active,
 	color: inherit;
 	font-weight: 500;
 	font-size: 15px;
-	line-height: 18px; }
+	line-height: 18px;
+	cursor: pointer;
+	text-decoration: none; }
 .important-link,
 .important-link:hover,
 .important-link:active,
@@ -165,11 +168,6 @@ body {
 	background-color: var(--white);
 	color: var(--black);
 	font-family: var(--font-face); }
-a,
-a:visited,
-a:active {
-	cursor: pointer;
-	text-decoration: none; }
 input {
 	height: var(--gutter);
 	border: none;
@@ -188,11 +186,14 @@ input:focus,
 	border-bottom: 1px var(--blue) solid; }
 .button,
 button {
+	cursor: pointer;
 	text-align: center;
 	background-color: transparent;
 	border-radius: 3px;
 	border: 1px var(--black) solid;
-	padding: 5px; }
+	color: var(--black);
+	padding: 5px; 
+	outline: none; }
 header {
 	width: 100%;
 	padding: var(--half-gutter) 0; }
@@ -200,8 +201,6 @@ footer {
 	height: 215px;
 	width: 100%; }
 a:hover 										{ color: var(--blue); }
-a:active,
-a:hover 										{ font-size: inherit; }
 footer div a,
 footer div a:visited 				{ color: var(--white); }
 * 													{ margin: 0; }
@@ -226,14 +225,16 @@ footer div a:visited 				{ color: var(--white); }
   max-width: 100%;
   box-sizing: border-box; }
 .card {
-	padding: var(--col) calc(var(--gutter) + var(--col));
+	padding: var(--col);
 	background: var(--white);
 	box-shadow: 2px 5px 10px #0000002b; }
 .night {
   background-color: #000;
 	color: #fff;
 	--white: #000;
-	--black: #fff; }
+	--black: #fff;
+	--mid-white: #666;
+	--mid-gray: #aaa; }
 .inset-boxshadow-dark-blue {
 	-webkit-box-shadow: var(--gutter) calc(var(--gutter) * -1) 0 0 var(--dark-blue);
 	-moz-box-shadow: var(--gutter) calc(var(--gutter) * -1) 0 0 var(--dark-blue);
@@ -493,6 +494,49 @@ footer div a:visited 				{ color: var(--white); }
 															margin-bottom: 50vh; }
 .quarter-screen-margin 			{ margin-top: 25vh; 
 															margin-bottom: 25vh; }
+
+/* Padding
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.double-col-padding 					{ padding: var(--double-col); }
+.double-col-padding-left 		{ padding-left: var(--double-col); }
+.double-col-padding-right 		{ padding-right: var(--double-col); }
+.double-col-padding-bottom 	{ padding-bottom: var(--double-col); }
+.double-col-padding-top 			{ padding-top: var(--double-col); }
+.double-col-padding-vertical { padding-top: var(--double-col);
+															padding-bottom: var(--double-col); }
+.col-padding 								{ padding: var(--col); }
+.col-padding-left 						{ padding-left: var(--col); }
+.col-padding-right 					{ padding-right: var(--col); }
+.col-padding-bottom 					{ padding-bottom: var(--col); }
+.col-padding-top 						{ padding-top: var(--col); }
+.col-padding-vertical 				{ padding-top: var(--col);
+															padding-bottom: var(--col); }
+.half-col-padding 						{ padding: var(--half-col); }
+.half-col-padding-left 			{ padding-left: var(--half-col); }
+.half-col-padding-right 			{ padding-right: var(--half-col); }
+.half-col-padding-bottom 		{ padding-bottom: var(--half-col); }
+.half-col-padding-top 				{ padding-top: var(--half-col); }
+.half-col-padding-vertical 	{ padding-top: var(--half-col);
+															padding-bottom: var(--half-col); }
+.gutter-padding 							{ padding: var(--gutter); }
+.gutter-padding-left 				{ padding-left: var(--gutter); }
+.gutter-padding-right 				{ padding-right: var(--gutter); }
+.gutter-padding-bottom 			{ padding-bottom: var(--gutter); }
+.gutter-padding-top 					{ padding-top: var(--gutter); }
+.gutter-padding-vertical			{ padding: var(--gutter) 0; }
+.half-gutter-padding 				{ padding: var(--half-gutter); }
+.half-gutter-padding-left 		{ padding-left: var(--half-gutter); }
+.half-gutter-padding-right 	{ padding-right: var(--half-gutter); }
+.half-gutter-padding-bottom 	{ padding-bottom: var(--half-gutter); }
+.half-gutter-padding-top 		{ padding-top: var(--half-gutter); }
+.half-gutter-padding-vertical{ padding-top: var(--half-gutter);
+															padding-bottom: var(--half-gutter); }
+.half-screen-padding-bottom 	{ padding-bottom: 50vh; }
+.half-screen-padding-top 		{ padding-top: 50vh; }
+.half-screen-padding 				{ padding-top: 50vh; 
+															padding-bottom: 50vh; }
+.quarter-screen-padding 			{ padding-top: 25vh; 
+															padding-bottom: 25vh; }
 
 /* Absolute
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
