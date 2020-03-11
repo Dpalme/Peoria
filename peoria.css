@@ -30,23 +30,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&display=swap');
 
-@font-face {
-	font-family: 'Gotham';
-	src:
-		url('../fonts/gotham/GothamBook.woff2') format('woff2'), 		/* Super Modern Browsers */ 
-		url('../fonts/gotham/GothamBook.woff') 	format('woff'), 		/* Pretty Modern Browsers */ 
-		url('../fonts/gotham/GothamBook.ttf') 	format('truetype'); /* Safari, Android, iOS */
-	font-weight: 500;
-}
-@font-face {
-	font-family: 'Gotham';
-	src:
-		url('../fonts/gotham/Gotham-Light.woff2') format('woff2'), 		/* Super Modern Browsers */
-		url('../fonts/gotham/Gotham-Light.woff') 	format('woff'), 		/* Pretty Modern Browsers */
-		url('../fonts/gotham/Gotham-Light.ttf') 	format('truetype'); /* Safari, Android, iOS */
-	font-weight: 400;
-}
-
 :root {
 	/* Colors
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -253,7 +236,8 @@ b 													{ color: var(--black); }
 	top: 0;
 	width: 100%;
 	height: 50vh; }
-.image-cover 								{ object-fit: cover; }
+.image-cover 								{ object-fit: cover;
+															background-size: cover; }
 .relative 									{ position: relative; }
 .double-gutter-height 			{ height: var(--double-gutter); }
 .gutter-height 							{ height: var(--gutter); }
@@ -301,7 +285,7 @@ b 													{ color: var(--black); }
 	z-index: 2; }
 .hamburger:hover .line 					{ background: var(--mid-gray); }
 .hamburger.active:hover .line 	{ background: var(--red); }
-.nav-links.open + .hamburger.active .line{ backgro und: var(--red); }
+.nav-links.open + .hamburger.active .line{ background: var(--red); }
 
 /* Navigation Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
