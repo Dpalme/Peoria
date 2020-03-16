@@ -271,7 +271,7 @@ b 													{ color: var(--black); }
 	background: var(--black);
 	width: 30px;
 	height: 1px;
-	transform: translateY(50%); }
+	margin: 5px; }
 .hamburger {
 	position: absolute;
 	width: 30px;
