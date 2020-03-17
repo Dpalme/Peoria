@@ -347,6 +347,11 @@ b 													{ color: var(--black); }
 .top 												{ top: 0; }
 .bottom 										{ bottom: 0; }
 
+.row                        { display: flex;
+															flex-direction: row; }
+.col 												{ display: flex;
+															flex-direction: column; }
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
