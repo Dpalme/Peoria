@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peoria</title>
-  <link rel="stylesheet" href="peoria.css" />
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/peoria-0-2-2.css" />
 </head>
 
 <body>
   <header class="green-secondary-bg white relative col-height">
     <div class="container">
-      <div class="hamburger" onclick="document.querySelector('ul').classList.toggle('open');">
+      <h3 class="black half column margin-none text-left">Peoria</h3>
+
+      <div class="hamburger one columns five-offset text-right half-gutter-padding-vertical front-2" onclick="document.querySelector('ul').classList.toggle('open');">
         <div class="line"></div>
-        <div class="line"></div>
+        <div class="line line-margin"></div>
         <div class="line"></div>
       </div>
-      <h3 class="black margin-auto">Peoria</h3>
     </div>
 
     <ul class="nav-links">
@@ -35,7 +36,7 @@
   </header>
 
   <div class="container-top-margin">
-    <p class="text-center">A lightweight CSS library for all your CSS needs</p>
+    <p class="text-center">A CSS library for all your CSS needs</p>
   </div>
 
   <div class="container-top-margin">
@@ -47,31 +48,24 @@
     <h3 class="gutter-margin-bottom">Grid</h3>
     <p class="col-margin-bottom">A comprehensive grid system derived from
       <a href="http://getskeleton.com/" class="links">skeleton</a>'s grid system</p>
-    <div class="card flex-wrap">
-      <div class="gutter-margin-bottom text-center button-text u-full-width">
-        <div class="one columns mid-white-bg gutter-height rounded">1</div>
-        <div class="eleven columns mid-white-bg gutter-height rounded">11</div>
-      </div>
-      <div class="gutter-margin-bottom text-center button-text u-full-width">
-        <div class="two columns mid-white-bg gutter-height rounded">2</div>
-        <div class="ten columns mid-white-bg gutter-height rounded">10</div>
-      </div>
-      <div class="gutter-margin-bottom text-center button-text u-full-width">
-        <div class="three columns mid-white-bg gutter-height rounded">3</div>
-        <div class="nine columns mid-white-bg gutter-height rounded">9</div>
-      </div>
-      <div class="gutter-margin-bottom text-center button-text u-full-width">
-        <div class="four columns mid-white-bg gutter-height rounded">4</div>
-        <div class="eight columns mid-white-bg gutter-height rounded">8</div>
-      </div>
-      <div class="gutter-margin-bottom text-center button-text u-full-width">
-        <div class="five columns mid-white-bg gutter-height rounded">5</div>
-        <div class="seven columns mid-white-bg gutter-height rounded">7</div>
-      </div>
-      <div class="gutter-margin-bottom text-center button-text u-full-width">
-        <div class="six columns mid-white-bg gutter-height rounded">6</div>
-        <div class="six columns mid-white-bg gutter-height rounded">6</div>
-      </div>
+    <div class="card flex-wrap text-center button-text">
+      <div class="one columns mid-white-bg gutter-height rounded gutter-margin-bottom">1</div>
+      <div class="eleven columns mid-white-bg gutter-height rounded gutter-margin-bottom">11</div>
+      
+      <div class="two columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">2</div>
+      <div class="ten columns mid-white-bg gutter-height rounded gutter-margin-bottom">10</div>
+      
+      <div class="three columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">3</div>
+      <div class="nine columns mid-white-bg gutter-height rounded gutter-margin-bottom">9</div>
+      
+      <div class="four columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">4</div>
+      <div class="eight columns mid-white-bg gutter-height rounded gutter-margin-bottom">8</div>
+
+      <div class="five columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">5</div>
+      <div class="seven columns mid-white-bg gutter-height rounded gutter-margin-bottom">7</div>
+      
+      <div class="six columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">6</div>
+      <div class="six columns mid-white-bg gutter-height rounded gutter-margin-bottom">6</div>
     </div>
   </div>
 
@@ -80,6 +74,15 @@
     <button onclick="document.querySelector('body').classList.toggle('night');"
      class="half-gutter-padding">
       Night Mode</button>
+  </div>
+
+  <div class="container-top-margin text-center">
+    <h3 class="gutter-margin-bottom">Built in hamburger menu</h3>
+    <div class="hamburger horizontal-center" onclick="document.querySelector('ul').classList.toggle('open');">
+      <div class="line"></div>
+      <div class="line line-margin"></div>
+      <div class="line"></div>
+    </div>
   </div>
 </body>
 
