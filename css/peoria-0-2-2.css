@@ -234,7 +234,7 @@ b 													{ color: var(--black); }
 	height: 50vh; }
 .image-cover 								{ object-fit: cover; }
 .background-cover           { background-size: cover; }
-.relative 									{ position: relative; }
+.relative 									{ position: relative !important; }
 .double-gutter-height 			{ height: var(--double-gutter); }
 .gutter-height 							{ height: var(--gutter); }
 .half-gutter-height 				{	height: var(--half-gutter); }
@@ -309,9 +309,7 @@ b 													{ color: var(--black); }
 	width: 100%;
 	top: 0;
 	display: none;
-	flex-direction: column;
-	padding-inline-start: 0;
-	transition: all .2s ease-in; }
+	padding-inline-start: 0; }
 .nav-links li {
 	width: 100%;
 	list-style: none;
@@ -356,11 +354,11 @@ b 													{ color: var(--black); }
 .half-width									{ width: 50%; }
 .quarter-width							{ width: 25%; }
 
-.inline 										{ display: inline; }
-.block											{ display: block; }
-.display-none								{ display: none; }
+.inline 										{ display: inline !important; }
+.block											{ display: block !important; }
+.display-none								{ display: none !important; }
 
-.fixed											{ position: fixed; }
+.fixed											{ position: fixed !important; }
 .top 												{ top: 0; }
 .bottom 										{ bottom: 0; }
 
@@ -577,7 +575,7 @@ b 													{ color: var(--black); }
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%); }
-.absolute 												{	position: absolute; }
+.absolute 												{	position: absolute !important; }
 
 /* Color
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
