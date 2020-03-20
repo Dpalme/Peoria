@@ -270,13 +270,32 @@ b 													{ color: var(--black); }
 .line {
 	background: var(--black);
 	width: 30px;
-	height: 1px; }
+	height: 1px;
+	margin: 5px;
+	transition: all .4s ease 0s; }
 .hamburger {
+	position: absolute;
 	width: 30px;
 	cursor: pointer;
+	right: 10px;
+	margin: 0;
 	z-index: 2; }
-.line-margin 															{ margin: 8px 0; }
+.active .hamburger .line {
+	background-color: var(--mid-white);
+	position: absolute;
+	transform: rotate(45deg);
+	margin: 0;
+	border-radius: 1em; }
+.active .hamburger {
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	top: 10px; }
+.active .hamburger .line-margin 					{	margin: 0;
+																						transform: rotate(-45deg); }
+.line-margin 															{ margin: 8px 0}
 .hamburger:hover .line 										{ background: var(--mid-gray); }
+.active .hamburger:hover .line 						{ background: var(--red); }
 
 /* Navigation Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -295,8 +314,6 @@ b 													{ color: var(--black); }
 	transition: all .2s ease-in; }
 .nav-links li {
 	width: 100%;
-	height: var(--gutter);
-	margin: var(--col) 0;
 	list-style: none;
 	text-align: center; }
 .header-link,
