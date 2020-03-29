@@ -467,7 +467,7 @@ b 													{ color: var(--black); }
 .half-gutter-margin-top     { margin-top: var(--half-gutter); }
 .half-gutter-margin-vertical{ margin-top: var(--half-gutter);
 															margin-bottom: var(--half-gutter); }
-.half-gutter-margin-vertical{ margin-left: var(--half-gutter);
+.half-gutter-margin-sides   { margin-left: var(--half-gutter);
                               margin-right: var(--half-gutter); }
 															
 .gutter-margin              { margin: var(--gutter); }
@@ -477,7 +477,7 @@ b 													{ color: var(--black); }
 .gutter-margin-top          { margin-top: var(--gutter); }
 .gutter-margin-vertical     { margin-top: var(--gutter);
 															 margin-bottom: var(--gutter); }
-.gutter-margin-vertical     { margin-left: var(--gutter);
+.gutter-margin-sides        { margin-left: var(--gutter);
 															margin-right: var(--gutter); }
 															
 .half-col-margin            { margin: var(--half-col); }
@@ -487,7 +487,7 @@ b 													{ color: var(--black); }
 .half-col-margin-top        { margin-top: var(--half-col); }
 .half-col-margin-vertical   { margin-top: var(--half-col);
 															margin-bottom: var(--half-col); }
-.half-col-margin-vertical   { margin-left: var(--half-col);
+.half-col-margin-sides      { margin-left: var(--half-col);
 															margin-right: var(--half-col); }
 															
 .col-margin                 { margin: var(--col); }
@@ -497,7 +497,7 @@ b 													{ color: var(--black); }
 .col-margin-top             { margin-top: var(--col); }
 .col-margin-vertical        { margin-top: var(--col);
 														  margin-bottom: var(--col); }
-.col-margin-vertical        { margin-left: var(--col);
+.col-margin-sides           { margin-left: var(--col);
 															margin-right: var(--col); }
 															
 .double-col-margin          { margin: var(--double-col); }
@@ -507,7 +507,7 @@ b 													{ color: var(--black); }
 .double-col-margin-top      { margin-top: var(--double-col); }
 .double-col-margin-vertical { margin-top: var(--double-col);
 														  margin-bottom: var(--double-col); }
-.double-col-margin-vertical { margin-left: var(--double-col);
+.double-col-margin-sides    { margin-left: var(--double-col);
 															margin-right: var(--double-col); }
 															
 .colngut-margin             { margin: var(--colngut); }
@@ -517,7 +517,7 @@ b 													{ color: var(--black); }
 .colngut-margin-top         { margin-top: var(--colngut); }
 .colngut-margin-vertical    { margin-top: var(--colngut);
 															margin-bottom: var(--colngut); }
-.colngut-margin-vertical    { margin-left: var(--colngut);
+.colngut-margin-sides       { margin-left: var(--colngut);
 															margin-right: var(--colngut); }
 
 /* Padding
@@ -529,7 +529,7 @@ b 													{ color: var(--black); }
 .half-gutter-padding-top    { padding-top: var(--half-gutter); }
 .half-gutter-padding-vertical{padding-top: var(--half-gutter);
 															padding-bottom: var(--half-gutter); }
-.half-gutter-padding-vertical{padding-left: var(--half-gutter);
+.half-gutter-padding-sides   {padding-left: var(--half-gutter);
                               padding-right: var(--half-gutter); }
 															
 .gutter-padding             { padding: var(--gutter); }
@@ -539,7 +539,7 @@ b 													{ color: var(--black); }
 .gutter-padding-top         { padding-top: var(--gutter); }
 .gutter-padding-vertical    { padding-top: var(--gutter);
 															padding-bottom: var(--gutter); }
-.gutter-padding-vertical    { padding-left: var(--gutter);
+.gutter-padding-sides       { padding-left: var(--gutter);
 															padding-right: var(--gutter); }
 															
 .half-col-padding           { padding: var(--half-col); }
@@ -549,7 +549,7 @@ b 													{ color: var(--black); }
 .half-col-padding-top       { padding-top: var(--half-col); }
 .half-col-padding-vertical  { padding-top: var(--half-col);
 															padding-bottom: var(--half-col); }
-.half-col-padding-vertical  { padding-left: var(--half-col);
+.half-col-padding-sides     { padding-left: var(--half-col);
 															padding-right: var(--half-col); }
 															
 .col-padding                { padding: var(--col); }
@@ -559,7 +559,7 @@ b 													{ color: var(--black); }
 .col-padding-top            { padding-top: var(--col); }
 .col-padding-vertical       { padding-top: var(--col);
 														  padding-bottom: var(--col); }
-.col-padding-vertical       { padding-left: var(--col);
+.col-padding-sides          { padding-left: var(--col);
 															padding-right: var(--col); }
 															
 .double-col-padding         { padding: var(--double-col); }
@@ -569,7 +569,7 @@ b 													{ color: var(--black); }
 .double-col-padding-top     { padding-top: var(--double-col); }
 .double-col-padding-vertical{ padding-top: var(--double-col);
 														   padding-bottom: var(--double-col); }
-.double-col-padding-vertical{ padding-left: var(--double-col);
+.double-col-padding-sides   { padding-left: var(--double-col);
 															 padding-right: var(--double-col); }
 															
 .colngut-padding            { padding: var(--colngut); }
@@ -579,7 +579,7 @@ b 													{ color: var(--black); }
 .colngut-padding-top        { padding-top: var(--colngut); }
 .colngut-padding-vertical   { padding-top: var(--colngut);
 															padding-bottom: var(--colngut); }
-.colngut-padding-vertical   { padding-left: var(--colngut);
+.colngut-padding-sides      { padding-left: var(--colngut);
 															padding-right: var(--colngut); }
 
 .half-screen-padding-bottom { padding-bottom: 50vh; }
