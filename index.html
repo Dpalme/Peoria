@@ -10,72 +10,134 @@
 </head>
 
 <body>
-  <header class="green-secondary-bg white relative col-height">
-    <div class="container">
-      <h3 class="text-center">Peoria</h3>
-    </div>
-
+  <header>
     <ul class="nav-links">
       <div class="absolute-center">
         <li><a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-          Lightweight</a></li>
+            Lightweight</a></li>
         <li><a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-          Grid</a></li>
+            Grid</a></li>
         <li><a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-          Night Mode</a></li>
+            Night Mode</a></li>
         <li><a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-          Hamburger</a></li>
+            Hamburger</a></li>
       </div>
     </ul>
   </header>
 
-  <div class="container-top-margin">
-    <p class="text-center">A CSS library for all your CSS needs</p>
+  <div class="fullscreen">
+    <div class="absolute-center text-center">
+      <h1>Peoria</h1>
+      <p>A CSS library for all your CSS needs</p>
+      <div class="flex-wrap half-gutter-margin-top">
+        <div class="black-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+        <div class="blue-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+        <div class="orange-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+        <div class="red-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+        <div class="yellow-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+        <div class="green-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+      </div>
+    </div>
   </div>
 
-  <div class="container-top-margin">
+  <div class="container">
     <h3 class="gutter-margin-bottom">Lightweight</h3>
-    <p class="col-margin-bottom">631 Lines</p>
+    <p>647 Lines</p>
   </div>
 
-  <div class="container-top-margin text-right">
+  <div class="container text-right">
     <h3 class="gutter-margin-bottom">Grid</h3>
     <p class="col-margin-bottom">A comprehensive grid system derived from
       <a href="http://getskeleton.com/" class="links">skeleton's</a> grid system</p>
     <div class="card flex-wrap text-center button-text">
-      <div class="one columns mid-white-bg gutter-height rounded gutter-margin-bottom">1</div>
-      <div class="eleven columns mid-white-bg gutter-height rounded gutter-margin-bottom">11</div>
-      
-      <div class="two columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">2</div>
-      <div class="ten columns mid-white-bg gutter-height rounded gutter-margin-bottom">10</div>
-      
-      <div class="three columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">3</div>
-      <div class="nine columns mid-white-bg gutter-height rounded gutter-margin-bottom">9</div>
-      
-      <div class="four columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">4</div>
-      <div class="eight columns mid-white-bg gutter-height rounded gutter-margin-bottom">8</div>
+      <div class="one columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">1</div>
+      <div class="eleven columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">11</div>
 
-      <div class="five columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">5</div>
-      <div class="seven columns mid-white-bg gutter-height rounded gutter-margin-bottom">7</div>
-      
-      <div class="six columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom">6</div>
-      <div class="six columns mid-white-bg gutter-height rounded gutter-margin-bottom">6</div>
+      <div class="two columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom card-box-shadow">2
+      </div>
+      <div class="ten columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">10</div>
+
+      <div class="three columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom card-box-shadow">3
+      </div>
+      <div class="nine columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">9</div>
+
+      <div class="four columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom card-box-shadow">4
+      </div>
+      <div class="eight columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">8</div>
+
+      <div class="five columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom card-box-shadow">5
+      </div>
+      <div class="seven columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">7</div>
+
+      <div class="six columns mid-white-bg gutter-height margin-none rounded gutter-margin-bottom card-box-shadow">6
+      </div>
+      <div class="six columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">6</div>
     </div>
   </div>
 
-  <div class="container-top-margin text-center">
+  <div class="container top-margin text-center">
     <h3 class="gutter-margin-bottom">Night Mode</h3>
-    <button onclick="document.querySelector('body').classList.toggle('night');">
-      Night Mode</button>
+    <button onclick="document.querySelector('body').classList.toggle('night');" class="half-gutter-padding">
+      Night Mode
+    </button>
   </div>
 
-  <div class="container-top-margin text-center">
+  <div class="container top-margin relative">
     <h3 class="gutter-margin-bottom">Built in hamburger menu</h3>
     <div class="hamburger horizontal-center" onclick="document.querySelector('ul').classList.toggle('open');">
       <div class="line"></div>
       <div class="line line-margin"></div>
       <div class="line"></div>
     </div>
+  </div>
+
+  <div class="container top-margin relative">
+    <h3 class="gutter-margin-bottom">Colors</h3>
+    
+    <div class="two columns one-offset margin-none">
+      <h4 class="text-center full column">Blue</h4>
+      <div class="blue-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom"></div>
+      <div class="blue-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+      <div class="blue-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+    </div>
+
+    <div class="two columns">
+      <h4 class="text-center full column">Orange</h4>
+      <div class="orange-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom"></div>
+      <div class="orange-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+      <div class="orange-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+    </div>
+
+    <div class="two columns">
+      <h4 class="text-center full column">Red</h4>
+      <div class="red-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom"></div>
+      <div class="red-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+      <div class="red-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+    </div>
+
+    <div class="two columns">
+      <h4 class="text-center full column">Yellow</h4>
+      <div class="yellow-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom"></div>
+      <div class="yellow-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+      <div class="yellow-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+    </div>
+
+    <div class="two columns">
+      <h4 class="text-center full column">Green</h4>
+      <div class="green-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom"></div>
+      <div class="green-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+      <div class="green-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+    </div>
+  </div>
+
+  <div class="container top-margin">
+    <h3 class="gutter-margin-bottom">Grid Values</h3>
+    <h4>Gutter</h4>
+    <div class="flex-wrap">
+      <div class="gutter-margin-sides">Margin</div>
+      <div class="gutter-padding">Padding</div>
+    </div>
+    <h4>Col</h4>
   </div>
 </body>
 

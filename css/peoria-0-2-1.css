@@ -364,8 +364,9 @@ b 													{ color: var(--black); }
   .container 									{ width: 80%; }
   .column,
   .columns 										{ margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child 				{ margin-left: 0; }
+  .container .column:first-child,
+	.container .columns:first-child
+															{ margin-left: 0; }
 
   .one.column,
   .one.columns                { width: 4.66666666667%; }
