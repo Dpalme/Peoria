@@ -84,18 +84,19 @@ body {
 	background-color: var(--white);
 	color: var(--black);
 	font-family: var(--font-face); }
+input, button, textarea {
+	background-color: var(--white);
+	color: var(--black);
+	border: 1px var(--black) solid;
+	border-radius: 3px;
+	padding: 5px; }
 input {
 	height: var(--gutter);
-	background-color: var(--white);
-	border: 1px var(--black) solid;
 	margin: 0 0 var(--gutter) 0 }
 textarea {
 	width: 98%;
 	resize: none;
-	padding: 2px;
-	resize: none;
-	background-color: var(--white);
-	border: 1px var(--black) solid; }
+	resize: none; }
 input:focus,
 textarea:focus {
 	outline: none;
@@ -104,17 +105,7 @@ textarea:focus {
 button {
 	cursor: pointer;
 	text-align: center;
-	background-color: transparent;
-	border-radius: 3px;
-	background-color: var(--white);
-	border: 1px var(--black) solid;
-	color: var(--black);
-	padding: 5px; 
 	outline: none; }
-header {
-	width: 100%;
-	padding: var(--half-gutter) 0; }
-footer                      { width: 100%;                }
 a:hover 										{ color: var(--blue);         }
 footer div a,
 footer div a:visited 				{ color: var(--white);        }
