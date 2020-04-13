@@ -84,7 +84,7 @@ body {
 	background-color: var(--white);
 	color: var(--black);
 	font-family: var(--font-face); }
-input, button, textarea {
+.button, input, button, textarea {
 	background-color: var(--white);
 	color: var(--black);
 	border: 1px var(--black) solid;
