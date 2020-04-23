@@ -83,8 +83,6 @@ body {
 	background-color: var(--white);
 	color: var(--black);
 	font-family: var(--font-face); }
-.button,
-button,
 textarea {
 	background-color: var(--white);
 	color: var(--black);
@@ -104,6 +102,11 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]{
+	background-color: var(--white);
+	color: var(--black);
+	border: 1px var(--black) solid;
+	border-radius: 3px;
+	padding: 5px;
 	cursor: pointer;
 	text-align: center;
 	outline: none; }
@@ -179,22 +182,20 @@ a:active,
 	font-size: 0.8333rem;
 	line-height: 2.5rem;
 	letter-spacing: 5%; }
-b 								{ color: var(--black);        }
-.bold 							{ font-weight: bold;          }
-.text-right 					{ text-align: right;          }
-.text-left 						{ text-align: left;           }
-.text-center 					{ text-align: center;         }
+b 								{ color: var(--black);        			}
+.bold 							{ font-weight: bold;          			}
+.text-right 					{ text-align: right;        			}
+.text-left 						{ text-align: left;           			}
+.text-center 					{ text-align: center;         			}
 
 /* Selection
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-::-moz-selection {
-	background: var(--white);
-	color: var(--black); }
-::selection 					{ background-color: var(--yellow-third); }
+::-moz-selection 				{ background: var(--yellow-third); 		}
+::selection 					{ background-color: var(--yellow-third);}
 
 /* Scrollbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-::-webkit-scrollbar 			{ display: none;              }
+::-webkit-scrollbar 			{ display: none;              			}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -284,6 +285,7 @@ input[type="password"],
 textarea,
 select {
   height: var(--gutter);
+  width: auto;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: var(--white);
   border: 1px solid var(--black);
