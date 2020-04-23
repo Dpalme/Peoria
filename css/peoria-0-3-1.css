@@ -77,8 +77,7 @@
 html {
 	overflow: auto;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
-	height: 100vh; }
+	scroll-behavior: smooth; }
 body {
 	background-color: var(--white);
 	color: var(--black);
