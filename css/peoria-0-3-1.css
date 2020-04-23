@@ -29,7 +29,7 @@
 	- Media Queries
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
 
 :root {
 	/* Colors
@@ -40,25 +40,25 @@
 	--grayed-out: #979797;
 	--black: #000000;
 	--dark-blue: #1E2D45;
-	--blue: #41607F;
-	--blue-secondary: #566385;
-	--blue-third: #6A7285;
-	--orange: #F9825C;
-	--orange-secondary: #FAAF96;
-	--orange-third: #FAD4C8;
-	--red: #F26680;
-	--red-secondary: #E3949B;
-	--red-third: #E3B6B9;
-	--yellow: #F2DC6D;
-	--yellow-secondary: #F2E49D;
-	--yellow-third: #F2EAC2;
-	--green: #728C73;
-	--green-secondary: #7E9481;
-	--green-third: #859487;
+	--blue: #002f4f;
+	--blue-secondary: #203c4f;
+	--blue-third: #2f424f;
+	--orange: #ff6200;
+	--orange-secondary: #ff8133;
+	--orange-third: #ffa166;
+	--red: #c72a39;
+	--red-secondary: #c7505b;
+	--red-third: #c7777f;
+	--yellow: #ffc800;
+	--yellow-secondary: #ffd333;
+	--yellow-third: #ffde66;
+	--green: #004F3A;
+	--green-secondary: #104f3e;
+	--green-third: #27493f;
 
 	/* Fonts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-	--font-face: 'Libre Franklin', Arial, Helvetica, sans-serif;
+	--font-face: 'Montserrat', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 
 	/* Grid values
@@ -118,12 +118,12 @@ footer div a:visited 	{ color: var(--white);        }
 .links, .button-text, 
 h1, h3 {
 	font-style: normal;
-	font-weight: 500; }
+	font-weight: 700; }
 h2, h4, 
 .super-secondary-title,
 .secondary-title {
 	font-style: normal;
-	font-weight: 400; 
+	font-weight: 500; 
 }
 .body-text,
 .secondary-body,
@@ -210,7 +210,7 @@ b 								{ color: var(--black);        }
 	background: var(--white);
 	box-shadow: 2px 5px 10px #0000002b; }
 .night {
-  	background-color: #000000;
+  	background-color: #222222;
 	color: #eaeaea;
 	--white: #121212;
 	--black: #eaeaea;
