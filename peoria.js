@@ -107,12 +107,14 @@ function createFooterOption(text) {
 	});
 }
 
-/** Removes all children from the object with the id "content". */
+/** Removes all children of content and scrolls to the top of the page. */
 function clearContent() {
 	content = document.getElementById("content");
 	while (content.firstChild) {
 		content.removeChild(content.firstChild);
 	}
+
+	window.scrollTo(0, 0);
 }
 
 /**
@@ -125,9 +127,11 @@ function addToContent(element) {
 }
 
 /**
- * Creates an element and adds it to the content.
+ * Peoria function to create an Element and add it to the content.
  *
- * @param {Options} options Object to append to content.
+ * @param {Options} options - Configuration for element.
+ *
+ * @example objectToContent({type: "h3", innerText: "This is neat!"})
  */
 function objectToContent(options) {
 	addToContent(object(options));
