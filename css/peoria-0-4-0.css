@@ -161,7 +161,7 @@ a:active,
 .text-center 					{ text-align: center;         			}
 .align-bottom                   { vertical-align: text-bottom;          }
 .selected a 					{ text-decoration: underline; 			}
-.center-align-text 				{ line-height: calc(var(--grid)*5); 	}
+.vertical-center-text 				{ line-height: calc(var(--grid)*5); 	}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
