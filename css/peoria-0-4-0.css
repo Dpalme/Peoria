@@ -38,7 +38,7 @@
 	--dark-blue: #202A44;
 	--blue: #0A66AF;
 	--orange: #EA5B0C;
-	--red: #E5241F;
+	--red: #C8102E;
 	--yellow: #F9E606;
 	--green: #01684B;
 	--pink: #D69CAD;
@@ -48,7 +48,7 @@
 	/* Fonts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 	--font-face: 'Poppins', Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: .72vw;
 
 	/* Grid values
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -161,12 +161,10 @@ a:active,
 .text-center 					{ text-align: center;         			}
 .align-bottom                   { vertical-align: text-bottom;          }
 .selected a 					{ text-decoration: underline; 			}
+.center-align-text 				{ line-height: calc(var(--grid)*5); 	}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.full-width {
-  width: 100%;
-  box-sizing: border-box; }
 .max-full-width {
   max-width: 100%;
   box-sizing: border-box; }
@@ -182,9 +180,6 @@ a:active,
 	--black: #eaeaea;
 	--mid-white: #666;
 	--mid-gray: #aaa; }
-.fullscreen {
-  	width: 100vw;
-	height: 100vh; }
 .background-cover {
 	background: url('../img/desktop-background.png') no-repeat center center fixed;
 	background-position: center top;
@@ -196,22 +191,6 @@ a:active,
 .image-cover 					{ object-fit: cover;          			}
 .relative 						{ position: relative;         			}
 
-.half-gutter-height 			{ height: var(--half-gutter)  			}
-.gutter-height 					{ height: var(--gutter);      			}
-.double-gutter-height 			{ height: var(--double-gutter)			}
-.half-col-height				{ height: var(--half-col);    			}
-.col-height 					{ height: var(--col);         			}
-.double-col-height				{ height: var(--double-col);  			}
-.colngut-height 				{ height: var(--colngut);     			}
-
-.half-gutter-width 				{ width: var(--half-gutter);			}
-.gutter-width 					{ width: var(--gutter);       			}
-.double-gutter-width 			{ width: var(--double-gutter);			}
-.half-col-width					{ width: var(--half-col);     			}
-.col-width 						{ width: var(--col);          			}
-.double-col-width				{ width: var(--double-col);   			}
-.colngut-width	 				{ width: var(--colngut);      			}
-
 .border                         { border: solid 1px var(--red);         }
 .rounded 						{ border-radius: 3px;         			}
 .back 							{ z-index: -1;                			}
@@ -222,15 +201,21 @@ a:active,
 .overflow-auto 					{ overflow: auto;             			}
 .float-right 					{ float: right !important;              }
 .float-left 					{ float: left !important;               }
+.fade 							{ animation: fade ease-in .2s 1; 		}
 
 .mobile-show 					{ display: none;						}
 .mobile-hide					{ display: inherit;						}
+.hover-to-show					{ opacity: 0;							}
+.hover-to-show:hover			{ opacity: 90%;							}
 
 ::-webkit-scrollbar 			{ display: none;              			}
 
 ::-moz-selection 				{ background: var(--yellow-third); 		}
 ::selection 					{ background-color: var(--yellow-third);}
 
+@keyframes fade {
+    from    { opacity: 0%;  }
+    to      { opacity: 100%;}}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -379,6 +364,7 @@ label > .label-body {
 .bottom 						{ bottom: 0;                  			}
 .right 							{ right: 0;                   			}
 .left 							{ left: 0;                    			}
+#content 						{ margin-bottom: calc(5 * var(--grid)); }
 
 .one.column,
 .one.columns             	 	{ width: calc(5*var(--grid));      		}
@@ -458,6 +444,10 @@ label > .label-body {
 
 /* Sizing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fullscreen {
+	width: 100vw;
+  	height: 100vh; }
+
 .full-height					{ height: 100%;               			}
 .half-height					{ height: 50%;                			}
 .one-height 					{ height: calc(5*var(--grid));			}
@@ -471,6 +461,7 @@ label > .label-body {
 .nine-height 					{ height: calc(45*var(--grid));			}
 .ten-height 					{ height: calc(50*var(--grid));			}
 
+.full-width						{ width: 100%;                 			}
 .half-width						{ width: 50%;                 			}
 .quarter-width					{ width: 25%;                 			}
 .one-width 						{ width: calc(5*var(--grid));			}
@@ -483,6 +474,22 @@ label > .label-body {
 .eight-width 					{ width: calc(40*var(--grid));			}
 .nine-width 					{ width: calc(45*var(--grid));			}
 .ten-width 						{ width: calc(50*var(--grid));			}
+
+.half-gutter-height 			{ height: var(--half-gutter)  			}
+.gutter-height 					{ height: var(--gutter);      			}
+.double-gutter-height 			{ height: var(--double-gutter)			}
+.half-col-height				{ height: var(--half-col);    			}
+.col-height 					{ height: var(--col);         			}
+.double-col-height				{ height: var(--double-col);  			}
+.colngut-height 				{ height: var(--colngut);     			}
+
+.half-gutter-width 				{ width: var(--half-gutter);			}
+.gutter-width 					{ width: var(--gutter);       			}
+.double-gutter-width 			{ width: var(--double-gutter);			}
+.half-col-width					{ width: var(--half-col);     			}
+.col-width 						{ width: var(--col);          			}
+.double-col-width				{ width: var(--double-col);   			}
+.colngut-width	 				{ width: var(--colngut);      			}
 
 /* Margins
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -683,24 +690,23 @@ label > .label-body {
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 @media (orientation: portrait) {
     :root {
-        --grid: 2vw;
-        font-size: 18px; }
+        --grid: 4vw;
+        font-size: 3vw; }
+
+	.container {
+		width: 90vw !important;
+		padding-left: 5vw !important;
+		margin: 0 !important; }
 
     .title-1, h1         			{ font-size: 3rem;						}
-    .title-2, h2    				{ font-size: 2.5rem;            			}
+    .title-2, h2    				{ font-size: 2.5rem;            		}
     .title-3, h3    				{ font-size: 2rem;            			}
     .title-4, h4    				{ font-size: 1.5rem;            		}
 
-    .container {
-        width: 90vw !important;
-        padding-left: 5vw !important;
-        margin: 0 !important; }
-
-    .mobile-hide 				{ display: none;						}
-    .mobile-show 				{ display: block; 						}
+    .mobile-hide 					{ display: none;						}
+    .mobile-show 					{ display: block; 						}
 
     .one-offset.column,
     .one-offset.columns,

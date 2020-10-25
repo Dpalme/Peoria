@@ -2,8 +2,8 @@
  * @name PEORIA
  * @version 04.01.2020
  * @copyright Diego Palmerin Bonada
- * @fileoverview A lightweight framework that optimizes workflow when building
- * a website and streamlines a lot of time heavy tasks.
+ * @fileoverview A lightweight framework that optimizes the workflow of building
+ * a website with pure js and streamlines a lot of time heavy tasks.
  */
 
 /**
