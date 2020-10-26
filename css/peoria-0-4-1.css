@@ -84,7 +84,6 @@ input[type="reset"],
 input[type="button"] {
 	border: none;
 	outline: 0;
-	border-radius: 5%;
     color: var(--white);
     text-transform: uppercase;
     text-align: center;
@@ -115,7 +114,7 @@ a:hover 						{ text-decoration: underline;   		}
 /* Font Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .title-1, .title-2, .title-3, .title-4,
-.links, .button-text, h1, h2, h3, h4 {
+.link, .button-text, h1, h2, h3, h4 {
 	font-style: normal;
 	font-weight: 300;
     line-height: 1em;
@@ -129,10 +128,11 @@ a:visited,
 a:active,
 .link {
 	color: inherit;
-	font-weight: 400;
-	font-size: 1.25rem;
+	font-weight: 300;
+	font-size: 2rem;
 	line-height: 1.5rem;
-	cursor: pointer;
+  cursor: pointer;
+  text-transform: uppercase;
 	text-decoration: none; }
 .no-wrap {
 	white-space: nowrap;
@@ -237,6 +237,7 @@ a:active,
     to      { opacity: 100%;}}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="name"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -246,15 +247,18 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: calc(5 * var(--gutter));
+  display: block;
+  height: calc(2.5*var(--grid));
   width: auto;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: var(--white);
-  border: 1px solid var(--black);
+  background-color: var(--mid-white);
+  border: none;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: fit-content; }
 /* Removes awkward default styles on some inputs for iOS */
+input[type="name"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -270,6 +274,7 @@ textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
+input[type="name"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -279,22 +284,25 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
   outline: 0; }
 label,
 legend {
   display: block;
   margin-bottom: .5rem;
-  font-weight: 400; }
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: calc(5*var(--grid)); }
 fieldset {
   padding: 0;
   border-width: 0; }
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
-  font-weight: 300; }
-  input[type="checkbox"],
-  input[type="radio"]             { display: inline;                        }
+  font-weight: 300;
+  text-transform: uppercase; }
+input[type="checkbox"],
+input[type="radio"]             { display: inline;                        }
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -308,7 +316,7 @@ label > .label-body {
   	width: 90vw;
   	margin: 0 auto;
 	padding-left: 5vw;
-  	padding-right: 5vw;}
+  	padding-right: 5vw; }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9,
 .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17,
 .col-18, .col-19, .col-20{
