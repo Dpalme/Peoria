@@ -82,14 +82,26 @@ textarea:focus {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-	background-color: var(--white);
-	color: var(--black);
-	border: 1px var(--black) solid;
-	border-radius: 3px;
-	padding: 5px;
-	cursor: pointer;
-	text-align: center;
-    outline: none; }
+	border: none;
+	outline: 0;
+	border-radius: 5%;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    line-height: calc(var(--grid)*5);
+    font-weight: 200;
+	background: linear-gradient(to right, var(--red) 65%, var(--black) 65%);
+	padding: 0 calc(5*var(--grid));
+    background-size: 300% 100%;
+    background-position:right bottom;
+	transition:all .5s ease; }
+.button:hover, button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+	background-position: bottom left;
+    text-decoration: none; }
 hr {
     width: 100%;
     margin: calc(var(--gutter) / 2) auto;
@@ -160,7 +172,7 @@ a:active,
 .text-center 					{ text-align: center;         			}
 .align-bottom                   { vertical-align: text-bottom;          }
 .selected a 					{ text-decoration: underline; 			}
-.l-h-1                          { line-height: calc(var(--grid)*5);     }
+.lh-1                          { line-height: calc(var(--grid)*5);     }
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -191,7 +203,7 @@ a:active,
 .relative 						{ position: relative;         			}
 
 .border                         { border: solid 1px var(--red);         }
-.rounded 						{ border-radius: 3px;         			}
+.rounded 						{ border-radius: 5%;         			}
 .back 							{ z-index: -1;                			}
 .back-2 						{ z-index: -2;                			}
 .front 							{ z-index: 1;                 			}
@@ -398,183 +410,183 @@ label > .label-body {
 .margin-auto-sides				{ margin: auto initial;         		}
 .margin-auto-vertical			{ margin: initial auto;                 }
 
-.margin-s                       { margin: calc(.5*var(--grid));         }
-.margin-l-s                     { margin-left: calc(.5*var(--grid));    }
-.margin-r-s                     { margin-right: calc(.5*var(--grid));   }
-.margin-b-s                     { margin-bottom: calc(.5*var(--grid));  }
-.margin-t-s                     { margin-top: calc(.5*var(--grid));     }
-.margin-v-s                     { margin: calc(.5*var(--grid)) initial; }
-.margin-s-s                     { margin: initial calc(.5*var(--grid)); }
+.margin-s                       { margin: calc(2.5*var(--grid));        }
+.margin-l-s                     { margin-left: calc(2.5*var(--grid));   }
+.margin-r-s                     { margin-right: calc(2.5*var(--grid));  }
+.margin-b-s                     { margin-bottom: calc(2.5*var(--grid)); }
+.margin-t-s                     { margin-top: calc(2.5*var(--grid));    }
+.margin-v-s                     { margin: calc(2.5*var(--grid)) 0;      }
+.margin-s-s                     { margin: 0 calc(2.5*var(--grid));      }
 
 .margin-1                       { margin: calc(5*var(--grid));          }
 .margin-l-1                     { margin-left: calc(5*var(--grid));     }
 .margin-r-1                     { margin-right: calc(5*var(--grid));    }
 .margin-b-1                     { margin-bottom: calc(5*var(--grid));   }
 .margin-t-1                     { margin-top: calc(5*var(--grid));      }
-.margin-v-1                     { margin: calc(5*var(--grid)) initial;  }
-.margin-s-1                     { margin: initial calc(5*var(--grid));  }
+.margin-v-1                     { margin: calc(5*var(--grid)) 0;        }
+.margin-s-1                     { margin: 0 calc(5*var(--grid));        }
                               
 .margin-2                       { margin: calc(10*var(--grid));         }
 .margin-l-2                     { margin-left: calc(10*var(--grid));    }
 .margin-r-2                     { margin-right: calc(10*var(--grid));   }
 .margin-b-2                     { margin-bottom: calc(10*var(--grid));  }
 .margin-t-2                     { margin-top: calc(10*var(--grid));     }
-.margin-v-2                     { margin: calc(10*var(--grid)) initial; }
-.margin-s-2                     { margin: initial calc(10*var(--grid)); }
+.margin-v-2                     { margin: calc(10*var(--grid)) 0;       }
+.margin-s-2                     { margin: 0 calc(10*var(--grid));       }
                               
 .margin-3                       { margin: calc(15*var(--grid));         }
 .margin-l-3                     { margin-left: calc(15*var(--grid));    }
 .margin-r-3                     { margin-right: calc(15*var(--grid));   }
 .margin-b-3                     { margin-bottom: calc(15*var(--grid));  }
 .margin-t-3                     { margin-top: calc(15*var(--grid));     }
-.margin-v-3                     { margin: calc(15*var(--grid)) initial; }
-.margin-s-3                     { margin: initial calc(15*var(--grid)); }
+.margin-v-3                     { margin: calc(15*var(--grid)) 0;       }
+.margin-s-3                     { margin: 0 calc(15*var(--grid));       }
                               
 .margin-4                       { margin: calc(20*var(--grid));         }
 .margin-l-4                     { margin-left: calc(20*var(--grid));    }
 .margin-r-4                     { margin-right: calc(20*var(--grid));   }
 .margin-b-4                     { margin-bottom: calc(20*var(--grid));  }
 .margin-t-4                     { margin-top: calc(20*var(--grid));     }
-.margin-v-4                     { margin: calc(20*var(--grid)) initial; }
-.margin-s-4                     { margin: initial calc(20*var(--grid)); }
+.margin-v-4                     { margin: calc(20*var(--grid)) 0;       }
+.margin-s-4                     { margin: 0 calc(20*var(--grid));       }
                               
 .margin-5                       { margin: calc(25*var(--grid));         }
 .margin-l-5                     { margin-left: calc(25*var(--grid));    }
 .margin-r-5                     { margin-right: calc(25*var(--grid));   }
 .margin-b-5                     { margin-bottom: calc(25*var(--grid));  }
 .margin-t-5                     { margin-top: calc(25*var(--grid));     }
-.margin-v-5                     { margin: calc(25*var(--grid)) initial; }
-.margin-s-5                     { margin: initial calc(25*var(--grid)); }
+.margin-v-5                     { margin: calc(25*var(--grid)) 0;       }
+.margin-s-5                     { margin: 0 calc(25*var(--grid));       }
                               
 .margin-6                       { margin: calc(30*var(--grid));         }
 .margin-l-6                     { margin-left: calc(30*var(--grid));    }
 .margin-r-6                     { margin-right: calc(30*var(--grid));   }
 .margin-b-6                     { margin-bottom: calc(30*var(--grid));  }
 .margin-t-6                     { margin-top: calc(30*var(--grid));     }
-.margin-v-6                     { margin: calc(30*var(--grid)) initial; }
-.margin-s-6                     { margin: initial calc(30*var(--grid)); }
+.margin-v-6                     { margin: calc(30*var(--grid)) 0;       }
+.margin-s-6                     { margin: 0 calc(30*var(--grid));       }
                               
 .margin-7                       { margin: calc(35*var(--grid));         }
 .margin-l-7                     { margin-left: calc(35*var(--grid));    }
 .margin-r-7                     { margin-right: calc(35*var(--grid));   }
 .margin-b-7                     { margin-bottom: calc(35*var(--grid));  }
 .margin-t-7                     { margin-top: calc(35*var(--grid));     }
-.margin-v-7                     { margin: calc(35*var(--grid)) initial; }
-.margin-s-7                     { margin: initial calc(35*var(--grid)); }
+.margin-v-7                     { margin: calc(35*var(--grid)) 0;       }
+.margin-s-7                     { margin: 0 calc(35*var(--grid));       }
                               
 .margin-8                       { margin: calc(40*var(--grid));         }
 .margin-l-8                     { margin-left: calc(40*var(--grid));    }
 .margin-r-8                     { margin-right: calc(40*var(--grid));   }
 .margin-b-8                     { margin-bottom: calc(40*var(--grid));  }
 .margin-t-8                     { margin-top: calc(40*var(--grid));     }
-.margin-v-8                     { margin: calc(40*var(--grid)) initial; }
-.margin-s-8                     { margin: initial calc(40*var(--grid)); }
+.margin-v-8                     { margin: calc(40*var(--grid)) 0;       }
+.margin-s-8                     { margin: 0 calc(40*var(--grid));       }
                               
 .margin-9                       { margin: calc(45*var(--grid));         }
 .margin-l-9                     { margin-left: calc(45*var(--grid));    }
 .margin-r-9                     { margin-right: calc(45*var(--grid));   }
 .margin-b-9                     { margin-bottom: calc(45*var(--grid));  }
 .margin-t-9                     { margin-top: calc(45*var(--grid));     }
-.margin-v-9                     { margin: calc(45*var(--grid)) initial; }
-.margin-s-9                     { margin: initial calc(45*var(--grid)); }
+.margin-v-9                     { margin: calc(45*var(--grid)) 0;       }
+.margin-s-9                     { margin: 0 calc(45*var(--grid));       }
                               
 .margin-10                      { margin: calc(50*var(--grid));         }
 .margin-l-10                    { margin-left: calc(50*var(--grid));    }
 .margin-r-10                    { margin-right: calc(50*var(--grid));   }
 .margin-b-10                    { margin-bottom: calc(50*var(--grid));  }
 .margin-t-10                    { margin-top: calc(50*var(--grid));     }
-.margin-v-10                    { margin: calc(50*var(--grid)) initial; }
-.margin-s-10                    { margin: initial calc(50*var(--grid)); }
+.margin-v-10                    { margin: calc(50*var(--grid)) 0;       }
+.margin-s-10                    { margin: 0 calc(50*var(--grid));       }
 
 /* Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.padding-s                      { padding: calc(.5*var(--grid));        }
-.padding-l-s                    { padding-left: calc(.5*var(--grid));   }
-.padding-r-s                    { padding-right: calc(.5*var(--grid));  }
-.padding-b-s                    { padding-bottom: calc(.5*var(--grid)); }
-.padding-t-s                    { padding-top: calc(.5*var(--grid));    }
-.padding-v-s                    { padding: calc(.5*var(--grid)) initial;}
-.padding-s-s                    { padding: initial calc(.5*var(--grid));}
+.padding-s                      { padding: calc(2.5*var(--grid));       }
+.padding-l-s                    { padding-left: calc(2.5*var(--grid));  }
+.padding-r-s                    { padding-right: calc(2.5*var(--grid)); }
+.padding-b-s                    { padding-bottom: calc(2.5*var(--grid));}
+.padding-t-s                    { padding-top: calc(2.5*var(--grid));   }
+.padding-v-s                    { padding: calc(2.5*var(--grid)) 0;     }
+.padding-s-s                    { padding: 0 calc(2.5*var(--grid));     }
 
 .padding-1                      { padding: calc(5*var(--grid));         }
 .padding-l-1                    { padding-left: calc(5*var(--grid));    }
 .padding-r-1                    { padding-right: calc(5*var(--grid));   }
 .padding-b-1                    { padding-bottom: calc(5*var(--grid));  }
 .padding-t-1                    { padding-top: calc(5*var(--grid));     }
-.padding-v-1                    { padding: calc(5*var(--grid)) initial; }
-.padding-s-1                    { padding: initial calc(5*var(--grid)); }
+.padding-v-1                    { padding: calc(5*var(--grid)) 0;       }
+.padding-s-1                    { padding: 0 calc(5*var(--grid));       }
                               
 .padding-2                      { padding: calc(10*var(--grid));        }
 .padding-l-2                    { padding-left: calc(10*var(--grid));   }
 .padding-r-2                    { padding-right: calc(10*var(--grid));  }
 .padding-b-2                    { padding-bottom: calc(10*var(--grid)); }
 .padding-t-2                    { padding-top: calc(10*var(--grid));    }
-.padding-v-2                    { padding: calc(10*var(--grid)) initial;}
-.padding-s-2                    { padding: initial calc(10*var(--grid));}
+.padding-v-2                    { padding: calc(10*var(--grid)) 0;      }
+.padding-s-2                    { padding: 0 calc(10*var(--grid));      }
                               
 .padding-3                      { padding: calc(15*var(--grid));        }
 .padding-l-3                    { padding-left: calc(15*var(--grid));   }
 .padding-r-3                    { padding-right: calc(15*var(--grid));  }
 .padding-b-3                    { padding-bottom: calc(15*var(--grid)); }
 .padding-t-3                    { padding-top: calc(15*var(--grid));    }
-.padding-v-3                    { padding: calc(15*var(--grid)) initial;}
-.padding-s-3                    { padding: initial calc(15*var(--grid));}
+.padding-v-3                    { padding: calc(15*var(--grid)) 0;      }
+.padding-s-3                    { padding: 0 calc(15*var(--grid));      }
                               
 .padding-4                      { padding: calc(20*var(--grid));        }
 .padding-l-4                    { padding-left: calc(20*var(--grid));   }
 .padding-r-4                    { padding-right: calc(20*var(--grid));  }
 .padding-b-4                    { padding-bottom: calc(20*var(--grid)); }
 .padding-t-4                    { padding-top: calc(20*var(--grid));    }
-.padding-v-4                    { padding: calc(20*var(--grid)) initial;}
-.padding-s-4                    { padding: initial calc(20*var(--grid));}
+.padding-v-4                    { padding: calc(20*var(--grid)) 0;      }
+.padding-s-4                    { padding: 0 calc(20*var(--grid));      }
                               
 .padding-5                      { padding: calc(25*var(--grid));        }
 .padding-l-5                    { padding-left: calc(25*var(--grid));   }
 .padding-r-5                    { padding-right: calc(25*var(--grid));  }
 .padding-b-5                    { padding-bottom: calc(25*var(--grid)); }
 .padding-t-5                    { padding-top: calc(25*var(--grid));    }
-.padding-v-5                    { padding: calc(25*var(--grid)) initial;}
-.padding-s-5                    { padding: initial calc(25*var(--grid));}
+.padding-v-5                    { padding: calc(25*var(--grid)) 0;      }
+.padding-s-5                    { padding: 0 calc(25*var(--grid));      }
                               
 .padding-6                      { padding: calc(30*var(--grid));        }
 .padding-l-6                    { padding-left: calc(30*var(--grid));   }
 .padding-r-6                    { padding-right: calc(30*var(--grid));  }
 .padding-b-6                    { padding-bottom: calc(30*var(--grid)); }
 .padding-t-6                    { padding-top: calc(30*var(--grid));    }
-.padding-v-6                    { padding: calc(30*var(--grid)) initial;}
-.padding-s-6                    { padding: initial calc(30*var(--grid));}
+.padding-v-6                    { padding: calc(30*var(--grid)) 0;      }
+.padding-s-6                    { padding: 0 calc(30*var(--grid));      }
                               
 .padding-7                      { padding: calc(35*var(--grid));        }
 .padding-l-7                    { padding-left: calc(35*var(--grid));   }
 .padding-r-7                    { padding-right: calc(35*var(--grid));  }
 .padding-b-7                    { padding-bottom: calc(35*var(--grid)); }
 .padding-t-7                    { padding-top: calc(35*var(--grid));    }
-.padding-v-7                    { padding: calc(35*var(--grid)) initial;}
-.padding-s-7                    { padding: initial calc(35*var(--grid));}
+.padding-v-7                    { padding: calc(35*var(--grid)) 0;      }
+.padding-s-7                    { padding: 0 calc(35*var(--grid));      }
                               
 .padding-8                      { padding: calc(40*var(--grid));        }
 .padding-l-8                    { padding-left: calc(40*var(--grid));   }
 .padding-r-8                    { padding-right: calc(40*var(--grid));  }
 .padding-b-8                    { padding-bottom: calc(40*var(--grid)); }
 .padding-t-8                    { padding-top: calc(40*var(--grid));    }
-.padding-v-8                    { padding: calc(40*var(--grid)) initial;}
-.padding-s-8                    { padding: initial calc(40*var(--grid));}
+.padding-v-8                    { padding: calc(40*var(--grid)) 0;      }
+.padding-s-8                    { padding: 0 calc(40*var(--grid));      }
                               
 .padding-9                      { padding: calc(45*var(--grid));        }
 .padding-l-9                    { padding-left: calc(45*var(--grid));   }
 .padding-r-9                    { padding-right: calc(45*var(--grid));  }
 .padding-b-9                    { padding-bottom: calc(45*var(--grid)); }
 .padding-t-9                    { padding-top: calc(45*var(--grid));    }
-.padding-v-9                    { padding: calc(45*var(--grid)) initial;}
-.padding-s-9                    { padding: initial calc(45*var(--grid));}
+.padding-v-9                    { padding: calc(45*var(--grid)) 0;      }
+.padding-s-9                    { padding: 0 calc(45*var(--grid));      }
                               
 .padding-10                     { padding: calc(50*var(--grid));        }
 .padding-l-10                   { padding-left: calc(50*var(--grid));   }
 .padding-r-10                   { padding-right: calc(50*var(--grid));  }
 .padding-b-10                   { padding-bottom: calc(50*var(--grid)); }
 .padding-t-10                   { padding-top: calc(50*var(--grid));    }
-.padding-v-10                   { padding: calc(50*var(--grid)) initial;}
-.padding-s-10                   { padding: initial calc(50*var(--grid));}
+.padding-v-10                   { padding: calc(50*var(--grid)) 0;      }
+.padding-s-10                   { padding: 0 calc(50*var(--grid));      }
 
 .half-screen-padding-b 	        { padding-bottom: 50vh;       			}
 .half-screen-padding-t 		    { padding-top: 50vh;          			}
