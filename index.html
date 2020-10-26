@@ -5,109 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peoria</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/peoria-0-3-1.css" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/peoria-0-4-0.css" />
 </head>
 
 <body class="">
-  <header>
-    <ul class="nav-links">
-      <div class="absolute-center">
-        <li>
-          <a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-            It</a>
-        </li>
-        <li>
-          <a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-            Just</a>
-        </li>
-        <li>
-          <a class="header-link main-title" onclick="document.querySelector('ul').classList.toggle('open');">
-            Works</a>
-        </li>
-      </div>
-    </ul>
-  </header>
 
   <div class="fullscreen">
-    <div class="absolute-center one-third column text-center card">
-      <h1>Peoria</h1>
-      <p>A CSS library for all your CSS needs</p>
-      <div class="half-gutter-margin-top">
-        <div class="black-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
-        <div class="blue-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
-        <div class="orange-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
-        <div class="red-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
-        <div class="yellow-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
-        <div class="green-bg two columns gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
+    <div class="absolute-center col-14 text-center card relative">
+      <h1 class="l-h-1">Peoria</h1>
+      <p class="l-h-1">A Lightweight CSS library</p>
+      <div class="">
+        <div class="black-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
+        <div class="blue-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
+        <div class="orange-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
+        <div class="red-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
+        <div class="yellow-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
+        <div class="green-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <h3 class="gutter-margin-bottom">Lightweight</h3>
-    <p>744 Lines</p>
+    <h3 class="margin-b-s">Lightweight</h3>
+    <p>733 Lines</p>
   </div>
 
-  <div class="container text-right">
-    <h3 class="gutter-margin-bottom full column">Grid</h3>
-    <p class="col-margin-bottom full column">A comprehensive grid system derived from
-      <a href="http://getskeleton.com/" class="links">skeleton's</a></p>
+  <div class="container text-right top-margin">
+    <h3 class="margin-b-s">Grid</h3>
+    <p class="margin-b-1">A view width based grid system</p>
 
-    <div class="card full column text-center button-text">
-      <div class="one columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">1</div>
-      <div class="eleven columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">11</div>
-
-      <div class="two columns mid-white-bg margin-none gutter-height rounded gutter-margin-bottom card-box-shadow">2
-      </div>
-      <div class="ten columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">10</div>
-
-      <div class="three columns mid-white-bg margin-none gutter-height rounded gutter-margin-bottom card-box-shadow">3
-      </div>
-      <div class="nine columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">9</div>
-
-      <div class="four columns mid-white-bg margin-none gutter-height rounded gutter-margin-bottom card-box-shadow">4
-      </div>
-      <div class="eight columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">8</div>
-
-      <div class="five columns mid-white-bg margin-none gutter-height rounded gutter-margin-bottom card-box-shadow">5
-      </div>
-      <div class="seven columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">7</div>
-
-      <div class="six columns mid-white-bg margin-none gutter-height rounded gutter-margin-bottom card-box-shadow">6
-      </div>
-      <div class="six columns mid-white-bg gutter-height rounded gutter-margin-bottom card-box-shadow">6</div>
+    <div class="card col-18 text-center button-text">
+      <div class="col-3 mid-white-bg h-1 l-h-1 rounded card-box-shadow">3</div>
+      <div class="col-1 white-bg h-1 l-h-1 card-box-shadow">1</div>
+      <div class="col-7 mid-white-bg h-1 l-h-1 rounded margin-b-s card-box-shadow">7</div>
+      <div class="col-1 white-bg h-1 l-h-1 card-box-shadow">1</div>
+      <div class="col-4 mid-white-bg h-1 l-h-1 rounded card-box-shadow">4</div>
     </div>
   </div>
 
   <div class="container top-margin">
-    <p class="text-left half-gutter-padding black-bg yellow half-gutter-margin-top">class="full column"</p>
+    <p class="l-h-1 text-left black-bg yellow padding-l-1">class="col-20"</p>
   </div>  
   
-
   <div class="container top-margin relative">
 
-    <div class="full column">
-      <div class="one-third column margin-none gutter-margin-bottom">
-        <h3 class="gutter-margin-bottom">Typography</h3>
-        <p>Montserrat (Sourced from Google Fonts)</p>
+    <!-- Typography -->
+    <div class="col-20">
+      <div class="col-4 margin-none margin-b-s">
+        <h3 class="margin-b-s">Typography</h3>
+        <p>Poppins (Sourced from Google Fonts)</p>
       </div>
-      <div class="two-thirds column">
-        <h1>super-title (h1)</h1>
-        <h2>super-secondary-title (h2)</h2>
-        <h3>.main-title (h3)</h3>
-        <h4>secondary-title (h4)</h4>
-        <p>body-text (p)</p>
-        <p class="small-body">small-body</p>
+      <div class="col-7 col-2-o">
+        <h1 class="margin-none">title-1 (h1)</h1>
+        <h2 class="margin-none">title-2 (h2)</h2>
+        <h3 class="margin-none">title-3 (h3)</h3>
+        <h4 class="margin-none">title-4 (h4)</h4>
+        <p class="margin-none">body-text (p)</p>
+        <p class="small-body margin-none">small-body</p>
       </div>
     </div>
 
-    <div class="full column col-margin-vertical">
-      <div class="one-third column gutter-margin-bottom">
-        <h1 class="gutter-margin-bottom">Lorem Ipsum</h1>
+    <!-- Lorem Ipsum -->
+    <div class="col-18 margin-1">
+      <div class="col-1-3 margin-b-s">
+        <h1 class="margin-b-s">Lorem Ipsum</h1>
       </div>
-      <div class="two-thirds column">
-        <p class="gutter-margin-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      <div class="col-2-3">
+        <p class="margin-b-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Eu consequat ac felis donec et odio. Tincidunt vitae semper quis lectus. Neque viverra justo nec
           ultrices dui sapien eget mi. Adipiscing elit ut aliquam purus sit amet. Risus nec feugiat in fermentum posuere
           urna nec tincidunt praesent. Amet luctus venenatis lectus magna fringilla urna porttitor. Urna et pharetra
@@ -130,74 +95,79 @@
       </div>
     </div>
 
-    <div class="full column margin-none">
+    <!-- Change Fonts -->
+    <div class="col-20 margin-none">
       <h4 class="gutter-margin-vertical">Want to change fonts? <b><i>Easy</i></b></h4>
-      <pre class="black-bg white body-text half-gutter-padding-vertical">
+      <pre class="black-bg white body-text half-gutter-padding-vertical three-height l-h-1">
   <p class="red inline">root:</p> {
     --font-face: <i>fonts</i>;</p>  }</pre>
     </div>
 
   </div>
 
+  <!-- Night Mode -->
   <div class="container top-margin text-center">
-    <h3 class="gutter-margin-bottom">Night Mode</h3>
+    <h3 class="margin-b-s">Night Mode</h3>
     <button onclick="document.querySelector('body').classList.toggle('night');" class="half-gutter-padding">
       Night Mode
     </button>
   </div>
 
+  <!-- Hamburger Menu -->
   <div class="container top-margin relative">
-    <h3 class="gutter-margin-bottom">Built in hamburger menu</h3>
-    <div class="hamburger horizontal-center" onclick="document.querySelector('ul').classList.toggle('open');">
-      <div class="line"></div>
-      <div class="line line-margin"></div>
-      <div class="line"></div>
+    <div class="col-20 col-margin-vertical">
+      <h3>Built in hamburger menu</h3>
+      <div class="hamburger absolute-center" onclick="document.querySelector('ul').classList.toggle('open');">
+        <div class="line"></div>
+        <div class="line line-margin"></div>
+        <div class="line"></div>
+      </div>
     </div>
   </div>
 
   <div class="container top-margin relative">
-    <h3 class="gutter-margin-bottom">Grid Values</h3>
-    <div class="full column text-center">
-      <div class="two columns one-offset gutter-margin-bottom">
-        <h4 class="half-gutter-margin-bottom">half-gutter</h4>
-        <div class="margin-auto half-gutter-width half-gutter-height green-bg"></div>
+    <h3 class="margin-b-s">Grid Values</h3>
+    <div class="col-20 text-center">
+      <div class="col-2 col-1-o margin-b-s">
+        <h4 class="half-margin-b-s">half-gutter</h4>
+        <div class="margin-auto half-gutter-width half-h-s green-bg"></div>
       </div>
-      <div class="two columns gutter-margin-bottom">
-        <h4 class="half-gutter-margin-bottom">gutter</h4>
-        <div class="margin-auto gutter-width gutter-height green-bg"></div>
+      <div class="col-2 margin-b-s">
+        <h4 class="half-margin-b-s">gutter</h4>
+        <div class="margin-auto gutter-width h-s green-bg"></div>
       </div>
-      <div class="two columns gutter-margin-bottom">
-        <h4 class="half-gutter-margin-bottom">col</h4>
+      <div class="col-2 margin-b-s">
+        <h4 class="half-margin-b-s">col</h4>
         <div class="margin-auto col-width col-height green-bg"></div>
       </div>
-      <div class="two columns gutter-margin-bottom">
-        <h4 class="half-gutter-margin-bottom">colngut</h4>
+      <div class="col-2 margin-b-s">
+        <h4 class="half-margin-b-s">colngut</h4>
         <div class="margin-auto colngut-width colngut-height green-bg"></div>
       </div>
-      <div class="two columns">
-        <h4 class="half-gutter-margin-bottom">double-col</h4>
+      <div class="col-2">
+        <h4 class="half-margin-b-s">double-col</h4>
         <div class="margin-auto double-col-width double-col-height green-bg"></div>
       </div>
     </div>
     <p>All grid values have padding, margin, height and width!<br>Margin and padding have: vertical, bottom, left,
       right, vertical, sides</p>
-    <p class="half-gutter-padding black-bg yellow half-gutter-margin-top">class="col-margin-bottom"</p>
+    <p class="half-gutter-padding black-bg yellow margin-t-s">class="margin-b-1"</p>
   </div>
 
   <div class="container top-margin relative">
-    <h3 class="gutter-margin-bottom">Forms</h3>
+    <h3 class="margin-b-s">Forms</h3>
     <form class="card">
-      <div class="half column gutter-margin-bottom">
+      <div class="half column margin-b-s">
         <label for="name">Name</label>
-        <input type="tel" id="name" class="twelve columns">
+        <input type="tel" id="name" class="col-12">
       </div>
-      <div class="half column gutter-margin-bottom">
+      <div class="half column margin-b-s">
         <label for="email">Email</label>
-        <input type="email" id="email" class="twelve columns">
+        <input type="email" id="email" class="col-12">
       </div>
-      <div class="full column gutter-margin-bottom">
+      <div class="col-20 margin-b-s">
         <label for="message">Message</label>
-        <textarea id="message" class="twelve columns"></textarea>
+        <textarea id="message" class="col-12"></textarea>
       </div>
       <input type="submit" value="Send">
     </form>
@@ -205,17 +175,17 @@
     <pre>
       <code>
         &lt;form class="card">
-        &lt;div class="half column gutter-margin-bottom">
+        &lt;div class="half column margin-b-s">
             &lt;label for="name">Name&lt;/label>
-            &lt;input type="tel" id="name" class="twelve columns">
+            &lt;input type="tel" id="name" class="col-12">
           &lt;/div>
-          &lt;div class="half column gutter-margin-bottom">
+          &lt;div class="half column margin-b-s">
             &lt;label for="email">Email&lt;/label>
-            &lt;input type="email" id="email" class="twelve columns">
+            &lt;input type="email" id="email" class="col-12">
           &lt;/div>
-          &lt;div class="full column gutter-margin-bottom">
+          &lt;div class="col-20 margin-b-s">
             &lt;label for="message">Message&lt;/label>
-            &lt;textarea id="message" class="twelve columns">&lt;/textarea>
+            &lt;textarea id="message" class="col-12">&lt;/textarea>
           &lt;/div>
           &lt;input type="submit" value="Send">
         &lt;/form>
@@ -225,73 +195,76 @@
   </div>
 
   <div class="container top-margin relative">
-    <h3 class="gutter-margin-bottom">Colors</h3>
+    <h3 class="margin-b-s">Colors</h3>
 
-    <div class="two columns one-offset margin-none">
-      <h4 class="text-center full column">Blue</h4>
-      <div class="blue-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom">
+    <div class="col-2 col-1-o margin-none">
+      <h4 class="text-center col-2">Blue</h4>
+      <div class="blue-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
       </div>
-      <div class="blue-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
-      </div>
-      <div class="blue-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
     </div>
 
-    <div class="two columns">
-      <h4 class="text-center full column">Orange</h4>
+    <div class="col-2">
+      <h4 class="text-center col-2">Orange</h4>
       <div
-        class="orange-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom">
-      </div>
-      <div class="orange-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
-      </div>
-      <div class="orange-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
+        class="orange-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
       </div>
     </div>
 
-    <div class="two columns">
-      <h4 class="text-center full column">Red</h4>
-      <div class="red-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom">
+    <div class="col-2">
+      <h4 class="text-center col-2">Red</h4>
+      <div class="red-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
       </div>
-      <div class="red-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
-      </div>
-      <div class="red-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom"></div>
     </div>
 
-    <div class="two columns">
-      <h4 class="text-center full column">Yellow</h4>
+    <div class="col-2">
+      <h4 class="text-center col-2">Yellow</h4>
       <div
-        class="yellow-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom">
-      </div>
-      <div class="yellow-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
-      </div>
-      <div class="yellow-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
+        class="yellow-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
       </div>
     </div>
 
-    <div class="two columns">
-      <h4 class="text-center full column">Green</h4>
+    <div class="col-2">
+      <h4 class="text-center col-2">Green</h4>
       <div
-        class="green-bg one-third column gutter-height rounded card-box-shadow margin-none half-gutter-margin-bottom">
-      </div>
-      <div class="green-secondary-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
-      </div>
-      <div class="green-third-bg one-third column gutter-height rounded card-box-shadow half-gutter-margin-bottom">
+        class="green-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
       </div>
     </div>
 
-    <div class="full column gutter-margin-bottom">
-      <p>All colors have bg variants</p>
-      <p class="half-gutter-padding black-bg yellow half-gutter-margin-top">class="full column green-secondary-bg
+    <div class="col-2">
+      <h4 class="text-center col-2">Pink</h4>
+      <div
+        class="pink-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      </div>
+    </div>
+
+    <div class="col-2">
+      <h4 class="text-center col-2">Purple</h4>
+      <div
+        class="purple-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      </div>
+    </div>
+
+    <div class="col-2">
+      <h4 class="text-center col-2">Brown</h4>
+      <div
+        class="brown-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      </div>
+    </div>
+
+    <div class="col-20 margin-b-s">
+      <p class="l-h-1 text-center half-margin-b-s">All colors have a class for the color and another for the background</p>
+      <p class="l-h-1 green-bg yellow">class=" l-h-1 col-20 green-bg yellow
         col-height"</p>
     </div>
 
-    <div class="full column green-secondary-bg col-height"></div>
+    <div class="col-20 green-secondary-bg col-height"></div>
   </div>
 
   <div class="container top-margin relative">
-    <h1 class="block gutter-margin-bottom text-center">Use Peoria!</h1>
-    <div class="full column gutter-margin-bottom">
-      <a class="button four columns four-offset" href="css/peoria-0-3-1.css" download>Download</a>
-      <div class="twelve columns text-center col-margin-vertical">
+    <h1 class="block margin-b-s text-center">Use Peoria!</h1>
+    <div class="col-20 margin-b-s">
+      <a class="button col-4 col-4-o" href="css/peoria-0-3-1.css" download>Download</a>
+      <div class="col-12 text-center col-margin-vertical">
         <h3>Or use the remote version!</h3>
         <h4>https://dpalme.github.io/Peoria/css/peoria-0-3-1.css</h4>
       </div>

@@ -1,24 +1,16 @@
 import pyperclip
 
-margin_types = ["half-gutter", "gutter",
-                "half-col", "col", "double-col", "colngut"]
-
-
 final_string = ""
 
-for margin in margin_types:
+for index in range(1, 21):
     final_string += """
-.%s-margin                  { margin: var(--%s); }
-.%s-margin-left             { margin-left: var(--%s); }
-.%s-margin-right            { margin-right: var(--%s); }
-.%s-margin-bottom 					{ margin-bottom: var(--%s); }
-.%s-margin-top              { margin-top: var(--%s); }
-.%s-margin-vertical         { margin-top: var(--%s);
-															margin-bottom: var(--%s); }
-.%s-margin-vertical         { margin-left: var(--%s);
-															margin-right: var(--%s); }
-                              """ % (margin, margin,
-                              margin, margin, margin, margin, margin, margin,
-                              margin, margin, margin, margin, margin, margin, margin, margin)
+.margin-%d                      { margin: calc(%d*var(--grid));           }
+.margin-left-%d                 { margin-left: calc(%d*var(--grid));      }
+.margin-right-%d                { margin-right: calc(%d*var(--grid));     }
+.margin-bottom-%d               { margin-bottom: calc(%d*var(--grid));    }
+.margin-top-%d                  { margin-top: calc(%d*var(--grid));       }
+.margin-vertical-%d             { margin: calc(%d*var(--grid)) initial;   }
+.margin-sides-%d                { margin: initial calc(%d*var(--grid));   }
+                              """ % (index, index*5, index, index*5, index, index*5, index, index*5, index, index*5, index, index*5, index, index*5)
 
 pyperclip.copy(final_string)
