@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="./css/peoria-0-4-1.css" />
 </head>
 
-<body class="">
+<body>
 
   <div class="fullscreen">
     <div class="absolute-center col-14 text-center card relative">
       <h1 class="lh-1">Peoria</h1>
       <p class="lh-1">A Lightweight CSS library</p>
       <div class="">
-        <div class="black-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
-        <div class="blue-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
-        <div class="orange-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
-        <div class="red-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
-        <div class="yellow-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
-        <div class="green-bg col-2 h-s rounded card-box-shadow mobile-hide"></div>
+        <div class="black-bg col-2 h-s card-box-shadow mobile-hide"></div>
+        <div class="blue-bg col-2 h-s card-box-shadow mobile-hide"></div>
+        <div class="orange-bg col-2 h-s card-box-shadow mobile-hide"></div>
+        <div class="red-bg col-2 h-s card-box-shadow mobile-hide"></div>
+        <div class="yellow-bg col-2 h-s card-box-shadow mobile-hide"></div>
+        <div class="green-bg col-2 h-s card-box-shadow mobile-hide"></div>
       </div>
     </div>
   </div>
@@ -36,27 +36,56 @@
     <p class="margin-b-1">A view width based grid system</p>
 
     <div class="card col-18 text-center button-text">
-      <div class="col-3 mid-white-bg h-1 lh-1 rounded card-box-shadow">3</div>
-      <div class="col-1 white-bg h-1 lh-1 card-box-shadow">1</div>
-      <div class="col-7 mid-white-bg h-1 lh-1 rounded margin-b-s card-box-shadow">7</div>
-      <div class="col-1 white-bg h-1 lh-1 card-box-shadow">1</div>
-      <div class="col-4 mid-white-bg h-1 lh-1 rounded card-box-shadow">4</div>
+      <div class="col-3 mid-gray-bg h-1 lh-1 card-box-shadow">3</div>
+      <div class="col-1 mid-white-bg h-1 lh-1 card-box-shadow">1</div>
+      <div class="col-7 mid-gray-bg h-1 lh-1 margin-b-s card-box-shadow">7</div>
+      <div class="col-1 mid-white-bg h-1 lh-1 card-box-shadow">1</div>
+      <div class="col-4 mid-gray-bg h-1 lh-1 card-box-shadow">4</div>
     </div>
   </div>
 
-  <div class="container top-margin">
-    <p class="lh-1 text-left black-bg yellow padding-l-1">class="col-20"</p>
+  <div class='grid col-20'>
+    <div class="margin-v-1" style='opacity: 100%;'>
+      <span class='col-1 h-1 border'></span>
+      <span class='col-1 h-1 border'></span>
+      <span class='col-1 h-1 border'></span>
+      <span class='col-1 h-1 border'></span>
+      <span class='col-1 h-1 border'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+      <span class='col-1 h-1 border mobile-hide'></span>
+    </div>
   </div>
 
+  <div class="container"></div>
+
+  <!-- Grid -->
+  <div class="container top-margin">
+    <p class="lh-1 text-left black-bg red padding-l-1">class="col-20"</p>
+  </div>
+
+  <!-- Typography -->
   <div class="container top-margin relative">
 
     <!-- Typography -->
-    <div class="col-20">
-      <div class="col-4 margin-none margin-b-s">
+    <div class="col-18">
+      <div class="col-5 margin-none margin-b-s">
         <h3 class="margin-b-s">Typography</h3>
         <p>Poppins (Sourced from Google Fonts)</p>
       </div>
-      <div class="col-7 col-2-o">
+      <div class="col-5 col-2-o">
         <h1 class="margin-none">title-1 (h1)</h1>
         <h2 class="margin-none">title-2 (h2)</h2>
         <h3 class="margin-none">title-3 (h3)</h3>
@@ -67,11 +96,11 @@
     </div>
 
     <!-- Lorem Ipsum -->
-    <div class="col-18 margin-t-1 margin-b-1">
-      <div class="col-1-3 margin-b-s">
+    <div class="col-16 margin-t-1 margin-b-1">
+      <div class="col-16 margin-b-s">
         <h1 class="margin-b-s">Lorem Ipsum</h1>
       </div>
-      <div class="col-2-3">
+      <div class="col-16">
         <p class="margin-b-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore
           magna aliqua. Eu consequat ac felis donec et odio. Tincidunt vitae semper quis lectus. Neque viverra justo nec
@@ -108,7 +137,7 @@
 
   <!-- Night Mode -->
   <div class="container top-margin text-center">
-    <button class="col-4 col-6-o" onclick="document.querySelector('body').classList.toggle('night');" class="half-gutter-padding">
+    <button class="col-4 col-6-o margin-v-1" onclick="document.querySelector('body').classList.toggle('night');" class="half-gutter-padding">
       Night Mode
     </button>
   </div>
@@ -116,18 +145,18 @@
   <div class="container top-margin relative">
     <p>All grid values have padding, margin, height and width options.<br>Margin and padding have: vertical, bottom, left,
       right, vertical, sides</p>
-    <p class="lh-1 black-bg yellow margin-t-s padding-l-1">class="lh-1 black-bg yellow margin-t-s padding-l-1"</p>
+    <p class="lh-1 black-bg red margin-t-s padding-l-1">class="lh-1 black-bg red margin-t-s padding-l-1"</p>
   </div>
 
   <div class="container top-margin relative">
-    <h3 class="margin-b-s">Forms</h3>
+    <h3 class="lh-1">Forms</h3>
   
-    <form class="card col-10">
-      <div class="col-8 margin-b-s">
+    <form class="card col-10 rounded">
+      <div class="col-8">
         <label for="name">Name</label>
         <input type="name" id="name">
       </div>
-      <div class="col-8 margin-b-s">
+      <div class="col-8">
         <label for="email">Email</label>
         <input type="email" id="email">
       </div>
@@ -161,53 +190,53 @@
   </div>
 
   <div class="container top-margin relative">
-    <h3 class="margin-b-s">Colors</h3>
+    <h3 class="lh-1">Colors</h3>
 
     <div class="col-2 col-1-o">
       <h4 class="text-center col-2">Blue</h4>
-      <div class="blue-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="blue-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Orange</h4>
-      <div class="orange-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="orange-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Red</h4>
-      <div class="red-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="red-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Yellow</h4>
-      <div class="yellow-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="yellow-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Green</h4>
-      <div class="green-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="green-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Pink</h4>
-      <div class="pink-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="pink-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Purple</h4>
-      <div class="purple-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="purple-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
     <div class="col-2">
       <h4 class="text-center col-2">Brown</h4>
-      <div class="brown-bg col-2 h-s rounded card-box-shadow half-margin-b-s">
+      <div class="brown-bg col-2 h-s card-box-shadow half-margin-b-s">
       </div>
     </div>
 
@@ -220,7 +249,7 @@
 
   <div class="container top-margin relative">
     <h1 class="block lh-1 text-center">Use Peoria!</h1>
-    <div class="col-20 margin-b-1 text-center">
+    <div class="col-18 margin-b-1 text-center">
       <a class="link lh-1 col-18 margin-auto" href="css/peoria-0-4-1.css" download>Download</a>
       <div class="col-18 text-center col-margin-vertical">
         <h3>Or use the remote version</h3>

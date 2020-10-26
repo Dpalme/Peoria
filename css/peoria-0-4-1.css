@@ -62,7 +62,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth; }
 body {
-    background-color: var(--white);
+    background-color: var(--mid-white);
     color: var(--black);
     font-family: var(--font-face); }
 textarea {
@@ -177,20 +177,25 @@ a:active,
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
+    max-width: 100%;
+    box-sizing: border-box; }
 .card {
     padding: calc(5*var(--grid));
-    box-shadow: 2px 5px 10px #0000002b;
-    -webkit-box-shadow: 2px 5px 10px #0000002b;
-    -moz-box-shadow: 2px 5px 10px #0000002b; }
+    -webkit-box-shadow: 1px 1px 1px 0px #ffffff9b, -20px -20px 40px 0px #FFFFFF, 20px 20px 40px 0px #D3DBE6; 
+    box-shadow: 1px 1px 1px 0px #ffffff9b, -20px -20px 40px 0px #FFFFFF, 20px 20px 40px 0px #D3DBE6;
+    -moz-box-shadow: 1px 1px 1px 0px #ffffff9b, -20px -20px 40px 0px #FFFFFF, 20px 20px 40px 0px #D3DBE6; }
 .night {
-      background-color: #000;
+    background-color: #000;
     color: #eaeaea;
     --white: #080808;
     --black: #eaeaea;
     --mid-white: #666;
     --mid-gray: #aaa; }
+.night .card{
+    outline: 1px var(--mid-gray) solid;
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    -moz-box-shadow: none; }
 .background-cover {
     background: url('../img/desktop-background.png') no-repeat center center fixed;
     background-position: center top;
@@ -251,7 +256,7 @@ select {
   height: calc(2.5*var(--grid));
   width: auto;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: var(--mid-white);
+  background-color: var(--mid-gray);
   border: none;
   border-radius: 4px;
   box-shadow: none;
@@ -312,15 +317,15 @@ input[type="radio"]             { display: inline;                      }
     clear: both; }
 .container,
 .container.top-margin {
-      position: relative;
-      width: 90vw;
-      margin: 0 auto;
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
     padding-left: 5vw;
-      padding-right: 5vw; }
+    padding-right: 5vw; }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9,
 .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17,
-.col-18, .col-19, .col-20{
-    max-width: 100vw;
+.col-18, .col-19{
+    max-width: 95vw;
     float: left;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -669,25 +674,14 @@ input[type="radio"]             { display: inline;                      }
     .mobile-hide                { display: none;                        }
     .mobile-show                { display: block;                       }
 
-    .one-offset.column,
-    .one-offset.columns,
-    .two-offset.columns,
-    .three-offset.columns,
-    .four-offset.columns,
-    .five-offset.columns,
-    .six-offset.columns,
-    .seven-offset.columns,
-    .eight-offset.columns,
-    .nine-offset.columns,
-    .ten-offset.columns,
-    .eleven-offset.columns,
-    .twelve-offset.columns,
-    .thirteen-offset.columns,
-    .fourteen-offset.columns,
-    .fifteen-offset.columns,
-    .sixteen-offset.columns,
-    .seventeen-offset.columns,
-    .eighteen-offset.columns,
-    .nineteen-offset.columns,
-    .twenty-offset.columns      { margin-left: 0 !important;              }
+    .col-1-o, .col-2-o,
+    .col-3-o, .col-4-o,
+    .col-5-o, .col-6-o,
+    .col-7-o, .col-8-o,
+    .col-9-o, .col-10-o,
+    .col-11-o, .col-12-o,
+    .col-13-o, .col-14-o,
+    .col-15-o, .col-16-o,
+    .col-17-o, .col-18-o,
+    .col-19-o                   { margin-left: calc(2.5*var(--grid)) !important;            }
 }
