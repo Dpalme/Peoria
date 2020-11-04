@@ -8,7 +8,7 @@
 
 /**
  * Options type for creating an element.
- * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string, child?: Element, children?: Element[], target?: string}} Options
+ * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string, child?: Element, children?: Element[], target?: string, role?: string, value?: string}} Options
  */
 
 /**
@@ -25,17 +25,15 @@ function object(options) {
 	if (options.classList !== undefined) htmlObject.classList = options.classList;
 	if (options.innerText !== undefined) htmlObject.innerText = options.innerText;
 	if (options.href !== undefined) htmlObject.setAttribute("href", options.href);
-	if (options.onclick !== undefined)
-		htmlObject.setAttribute("onclick", options.onclick);
+	if (options.onclick !== undefined) htmlObject.setAttribute("onclick", options.onclick);
 	if (options.src !== undefined) htmlObject.setAttribute("src", options.src);
-	if (options.style !== undefined)
-		htmlObject.setAttribute("style", options.style);
-	if (options.tabindex !== undefined)
-		htmlObject.setAttribute("tabindex", options.tabindex);
+	if (options.style !== undefined) htmlObject.setAttribute("style", options.style);
+	if (options.tabindex !== undefined) htmlObject.setAttribute("tabindex", options.tabindex);
 	if (options.id !== undefined) htmlObject.setAttribute("id", options.id);
 	if (options.child !== undefined) htmlObject.appendChild(options.child);
-	if (options.target !== undefined)
-		htmlObject.setAttribute("target", options.target);
+	if (options.target !== undefined) htmlObject.setAttribute("target", options.target);
+	if (options.role !== undefined) htmlObject.setAttribute("role", options.role);
+	if (options.value !== undefined) htmlObject.setAttribute("value", options.value);
 	if (options.children !== undefined)
 		options.children.forEach(child => {
 			htmlObject.appendChild(child);
