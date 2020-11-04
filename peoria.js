@@ -8,7 +8,7 @@
 
 /**
  * Options type for creating an element.
- * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string, child?: Element, children?: Element[], target?: string, role?: string, value?: string}} Options
+ * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string, child?: Element, children?: Element[], target?: string, role?: string, value?: string, for?: string}} Options
  */
 
 /**
@@ -34,6 +34,7 @@ function object(options) {
 	if (options.target !== undefined) htmlObject.setAttribute("target", options.target);
 	if (options.role !== undefined) htmlObject.setAttribute("role", options.role);
 	if (options.value !== undefined) htmlObject.setAttribute("value", options.value);
+	if (options.for !== undefined) htmlObject.setAttribute("for", options.for);
 	if (options.children !== undefined)
 		options.children.forEach(child => {
 			htmlObject.appendChild(child);
