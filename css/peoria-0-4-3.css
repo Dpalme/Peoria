@@ -447,9 +447,9 @@ input[type="radio"]             { display: inline;                      }
 .mr-lg                          { margin-right: var(--col-2);           }
 .mb-lg                          { margin-bottom: var(--col-2);          }
 .mt-lg                          { margin-top: var(--col-2);             }
-.mx-1                           { margin-left: var(--col-2);
+.mx-lg                           { margin-left: var(--col-2);
                                   margin-right: var(--col-2);           }
-.my-1                           { margin-top: var(--col-2);
+.my-lg                           { margin-top: var(--col-2);
                                   margin-bottom: var(--col-2);          }
 
 /* Padding
