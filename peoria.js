@@ -35,6 +35,7 @@ function object(options) {
 	if (options.role !== undefined) htmlObject.setAttribute("role", options.role);
 	if (options.value !== undefined) htmlObject.setAttribute("value", options.value);
 	if (options.for !== undefined) htmlObject.setAttribute("for", options.for);
+	if (options.onchange !== undefined) htmlObject.setAttribute("onchange", options.onchange);
 	if (options.children !== undefined)
 		options.children.forEach(child => {
 			htmlObject.appendChild(child);
