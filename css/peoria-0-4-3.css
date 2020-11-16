@@ -49,7 +49,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     --font-face: 'Poppins', Arial, Helvetica, sans-serif;
     --mono-font-face: 'Inconsolata', 'Courier New', Courier, monospace
-    font-size: .72vw;
+    font-size: 12px;
 
     /* Grid values
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -559,7 +559,7 @@ input[type="radio"]             { display: inline;                      }
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (orientation: portrait) {
     :root {
-        font-size: 3rem; }
+        font-size: 14px; }
 
     .container {
         width: 90vw !important;
