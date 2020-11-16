@@ -120,20 +120,25 @@ function clearContent() {
  * Adds an element to the body.
  *
  * @param {Element} element Object to append to content.
+ * 
+ * @returns {Element} the element Object it recieved.
  */
 function addToContent(element) {
 	append("content", element);
+	return element;
 }
 
 /**
  * Peoria function to create an Element and add it to the content.
  *
  * @param {Options} options - Configuration for element.
+ * 
+ * @returns {Element} the element that was created.
  *
  * @example objectToContent({type: "h3", innerText: "This is neat!"})
  */
 function objectToContent(options) {
-	addToContent(object(options));
+	return addToContent(object(options));
 }
 
 /**
