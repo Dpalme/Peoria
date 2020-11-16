@@ -360,38 +360,48 @@ input[type="radio"]             { display: inline;                      }
 .container.mb-c                 { margin-top: var(--col-2);             }
 .container.my-c                 { margin: var(--col-2) 0;               }
 
-@media (min-width: 550px) {
-    .col-1, .col-2, .col-3,
-    .col-4, .col-5, .col-6,
-    .col-7, .col-8, .col-9,
-    .col-10, .col-11, .col-12   { margin: 0 2%;                         }
-  
-    .col-1             	 	    { width: 4.33333333333%;                }
-    .col-2          	   	    { width: 12.6666666667%;                }
-    .col-3         	   	        { width: 21%;                           }
-    .col-4           	  	    { width: 29.3333333333%;                }
-    .col-5            	        { width: 37.6666666667%;                }
-    .col-6              	    { width: 46%;                           }
-    .col-7            	        { width: 54.3333333333%;                }
-    .col-8            	        { width: 62.6666666667%;                }
-    .col-9             	        { width: 71%;                           }
-    .col-10              	    { width: 79.3333333333%;                }
-    .col-11           	        { width: 87.6666666667%;                }
-    .col-12           	        { width: 96%;                           }
-  
-    /* Offsets */
-    .col-1-o                    { margin-left: 8.33333333333%;          }
-    .col-2-o                    { margin-left: 16.6666666667%;          }
-    .col-3-o                    { margin-left: 25%;                     }
-    .col-4-o                    { margin-left: 33.3333333333%;          }
-    .col-5-o                    { margin-left: 41.6666666667%;          }
-    .col-6-o                    { margin-left: 50%;                     }
-    .col-7-o                    { margin-left: 58.3333333333%;          }
-    .col-8-o                    { margin-left: 66.6666666667%;          }
-    .col-9-o                    { margin-left: 75%;                     }
-    .col-10-o                   { margin-left: 83.3333333333%;          }
-    .col-11-o                   { margin-left: 91.6666666667%;          }
-  }
+.col-1, .col-2, .col-3,
+.col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9,
+.col-10, .col-11, .col-12    { margin: 0 2%;                        }
+
+.col-1             	 	     { width: 4.33333333333%;               }
+.col-2          	   	     { width: 12.6666666667%;               }
+.col-3         	   	         { width: 21%;                          }
+.col-4           	  	     { width: 29.3333333333%;               }
+.col-5            	         { width: 37.6666666667%;               }
+.col-6              	     { width: 46%;                          }
+.col-7            	         { width: 54.3333333333%;               }
+.col-8            	         { width: 62.6666666667%;               }
+.col-9             	         { width: 71%;                          }
+.col-10              	     { width: 79.3333333333%;               }
+.col-11           	         { width: 87.6666666667%;               }
+.col-12           	         { width: 96%;                          }
+
+/* Offsets */
+.col-1-o                     { margin-left: 8.33333333333%;         }
+.col-2-o                     { margin-left: 16.6666666667%;         }
+.col-3-o                     { margin-left: 25%;                    }
+.col-4-o                     { margin-left: 33.3333333333%;         }
+.col-5-o                     { margin-left: 41.6666666667%;         }
+.col-6-o                     { margin-left: 50%;                    }
+.col-7-o                     { margin-left: 58.3333333333%;         }
+.col-8-o                     { margin-left: 66.6666666667%;         }
+.col-9-o                     { margin-left: 75%;                    }
+.col-10-o                    { margin-left: 83.3333333333%;         }
+.col-11-o                    { margin-left: 91.6666666667%;         }
+
+
+@media (orientation: portrait) {
+    .col-1             	 	 { width: 12.6666666667%;               }
+    .col-2          	   	 { width: 29.3333333333%;               }
+    .col-3         	   	     { width: 46%;                          }
+    .col-4         	   	     { width: 62.6666666667%;               }
+    .col-5         	   	     { width: 79.3333333333%;               }
+    .col-6, .col-7, .col-8,
+    .col-9, .col-10, .col-11,
+    .col-12                  { width: 96%;                          }
+}
 
 /* Sizing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
