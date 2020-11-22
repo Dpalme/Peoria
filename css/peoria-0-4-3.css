@@ -146,7 +146,6 @@ a:hover                         { text-decoration: underline;           }
     font-weight: 200; }
 a,
 a:visited,
-a:active,
 .link {
     color: inherit;
     font-weight: 300;
