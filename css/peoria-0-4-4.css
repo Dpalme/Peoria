@@ -199,7 +199,7 @@ h6                              { font-size: 1.33333333333rem;          }
 .text-l                         { text-align: left;                     }
 .text-c                         { text-align: center;                   }
 .text-b                         { vertical-align: text-bottom;          }
-.selected a                     { text-decoration: underline;           }
+a .selected                     { text-decoration: underline;           }
 .lh-sm                          { line-height: var(--h-col);            }
 .lh-1                           { line-height: var(--col);              }
 .lh-lg                          { line-height: var(--col-2);            }
