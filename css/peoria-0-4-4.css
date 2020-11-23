@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 a,
 a:visited,
 .link {
+    color: var(--black);
     font-weight: 300;
     font-size: 1.33333333333rem;
     cursor: pointer;
