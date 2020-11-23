@@ -151,7 +151,7 @@ a:visited,
 .link {
     color: inherit;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.33333333333rem;
     line-height: 1.5rem;
   cursor: pointer;
   text-transform: uppercase;
@@ -169,8 +169,8 @@ a:visited,
 .header-link:focus,
 .header-link:visited {
     font-weight: 200;
-    font-size: 1.16666666667em;
-    line-height: 1em;
+    font-size: 1.16666666667rem;
+    line-height: 1rem;
     text-transform: uppercase;
     color: var(--white) }
 .important-link,
@@ -198,7 +198,7 @@ h6                              { font-size: 1.33333333333rem;          }
 .text-r                         { text-align: right;                    }
 .text-l                         { text-align: left;                     }
 .text-c                         { text-align: center;                   }
-.align-bottom                   { vertical-align: text-bottom;          }
+.text-b                         { vertical-align: text-bottom;          }
 .selected a                     { text-decoration: underline;           }
 .lh-sm                          { line-height: var(--h-col);            }
 .lh-1                           { line-height: var(--col);              }
