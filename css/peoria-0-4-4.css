@@ -232,7 +232,7 @@ a.selected                     { text-decoration: underline;           }
        -moz-box-shadow: none;
             box-shadow: none; }
 .background-cover {
-    background: url('../img/desktop-background.png') no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-position: center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
