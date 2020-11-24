@@ -409,6 +409,13 @@ input[type="radio"]             { display: inline;                      }
     .col-6, .col-7, .col-8,
     .col-9, .col-10, .col-11,
     .col-12                     { width: 96%;                           }
+
+    .col-1-o, .col-2-o,
+    .col-3-o, .col-4-o,
+    .col-5-o, .col-6-o,
+    .col-7-o, .col-8-o,
+    .col-9-o, .col-10-o,
+    .col-11-o, .col-12-o        { margin: 0 2.5% !important               }
 }
 
 /* Sizing
@@ -568,17 +575,6 @@ input[type="radio"]             { display: inline;                      }
 @media (orientation: portrait) {
     :root {
         font-size: 14px; }
-
-    .container {
-        width: 90vw !important;
-        padding-left: 5vw !important; }
-
-    .col-1-o, .col-2-o,
-    .col-3-o, .col-4-o,
-    .col-5-o, .col-6-o,
-    .col-7-o, .col-8-o,
-    .col-9-o, .col-10-o,
-    .col-11-o, .col-12-o        { margin: 0 2.5% !important               }
 
     .mob-hide                   { display: none;                          }
     .mob-show                   { display: block;                         }
