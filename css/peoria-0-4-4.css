@@ -386,6 +386,9 @@ input[type="radio"]             { display: inline;                      }
 .col-11           	            { width: 87.6666666667%;                }
 .col-12           	            { width: 96%;                           }
 
+.col-h                          { width: 46%;                           }
+.col-q                          { width: 21%;                           }
+
 /* Offsets */
 .col-1-o                        { margin-left: 8.33333333333%;          }
 .col-2-o                        { margin-left: 16.6666666667%;          }
