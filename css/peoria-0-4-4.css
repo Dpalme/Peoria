@@ -258,7 +258,7 @@ a.selected                     { text-decoration: underline;           }
 .d-inline                       { display: inline;                      }
 .d-block                        { display: block;                       }
 .d-none                         { display: none;                        }
-.d-fixed                        { position: fixed;                      }
+.fixed                          { position: fixed;                      }
 .top                            { top: 0;                               }
 .bottom                         { bottom: 0;                            }
 .right                          { right: 0;                             }
