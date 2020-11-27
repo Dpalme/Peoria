@@ -23,7 +23,7 @@
 function object(options) {
 	htmlObject = document.createElement(options.type);
 	for(option in options) {
-		if(option != "children" && option != "class" && option != "innerText" && option != "child")
+		if(option != "children" && option != "class" && option != "innerText" && option != "child" && option != "type")
 		htmlObject.setAttribute(option, options[option]);
 	}
 	if (options.class !== undefined) htmlObject.classList = options.class;
