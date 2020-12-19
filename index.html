@@ -6,44 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peoria</title>
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/peoria-0-4-3.css" />
+  <link rel="stylesheet" href="./css/peoria-0-5-0.css" />
 </head>
 
-<body>
-
-  <div class="fullscreen">
-    <div class="center-a col-4 text-c card relative">
-      <h1 class="lh-lg">Peoria</h1>
-      <p class="lh-lg">A Lightweight CSS library</p>
+<body class="night">
+  <div class="night fullscreen">
+    <div class="center-a col-6 text-c relative">
+      <h1 class="title-1">Peoria</h1>
+      <p class="lh-lg greyed-out">A Lightweight CSS library</p>
       <div class="col-12 center-x">
-        <div class="black-bg col-3 h-sm card-box-shadow mob-hide"></div>
-        <div class="greyed-out-bg col-3 h-sm card-box-shadow mob-hide"></div>
-        <div class="mid-grey-bg col-3 h-sm card-box-shadow mob-hide"></div>
-        <div class="white-bg col-3 h-sm card-box-shadow mob-hide"></div>
+        <span class="black-bg mob-hide"></span>
+        <span class="greyed-out-bg mob-hide"></span>
+        <span class="mid-grey-bg mob-hide"></span>
+        <span class="white-bg mob-hide"></span>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <h3 class="mb-sm">Lightweight</h3>
-    <p>549 Lines</p>
+  <div class="container mt-lg">
+    <div class="col-h text-r">
+      <h1>592 Lines</h1>
+      <p>Lightweight</p>
+    </div>
+    <div class="col-h">
+      <h1>Grid System</h1>
+      <p>12 columns</p>
+    </div>
   </div>
 
   <div class="container text-r mt-c">
-    <h3 class="mb-sm">Grid</h3>
-    <p class="mb-sm">A 12 column percentage based grid system</p>
-
-    <div class="card col-12 text-c button-text">
-      <div class="col-5 rounded-sm mid-grey-bg h-1 lh-1 card-box-shadow">5</div>
-      <div class="col-2 rounded-sm mid-grey-bg h-1 lh-1 card-box-shadow">2</div>
-      <div class="col-4 rounded-sm mid-grey-bg h-1 lh-1 card-box-shadow">4</div>
-      <div class="col-1 rounded-sm mid-grey-bg h-1 lh-1 card-box-shadow">1</div>
+    <div class="col-12 text-c button-text">
+      <div class="col-12 rounded-sm mid-grey-bg h-1 lh-1">12</div>
+      <div class="col-2 rounded-sm mid-grey-bg h-1 lh-1">2</div>
+      <div class="col-4 rounded-sm mid-grey-bg h-1 lh-1">4</div>
+      <div class="col-6 rounded-sm mid-grey-bg h-1 lh-1">6</div>
     </div>
   </div>
 
   <!-- Grid -->
   <div class="container mt-c">
-    <pre>class="col-12"</pre>
+    <pre>&lt;div class="col-12 rounded-sm mid-grey-bg h-1 lh-1">12&lt;/div>
+&lt;div class="col-2 rounded-sm mid-grey-bg h-1 lh-1">2&lt;/div>
+&lt;div class="col-4 rounded-sm mid-grey-bg h-1 lh-1">4&lt;/div>
+&lt;div class="col-6 rounded-sm mid-grey-bg h-1 lh-1">6&lt;/div></pre>
   </div>
 
   <!-- Typography -->
@@ -51,28 +56,40 @@
 
     <!-- Typography -->
     <div class="col-12">
-      <div class="col-6 m-n mb-sm">
-        <h3 class="mb-sm">Typography</h3>
-        <p>Poppins (Sourced from Google Fonts)</p>
-        <code>Inconsolata (Sourced from Google Fonts)</code>
+      <div class="col-12">
+        <h1>Typography</h1>
+        <p class="small-body">(Sourced from Google Fonts)</p>
       </div>
-      <div class="col-6">
-        <h1 class="m-n">title-1 (h1)</h1>
-        <h2 class="m-n">title-2 (h2)</h2>
-        <h3 class="m-n">title-3 (h3)</h3>
-        <h4 class="m-n">title-4 (h4)</h4>
-        <p class="m-n">body-text (p)</p>
-        <p class="small-body m-n">small-body</p>
+      <div class="col-3 text-r">
+        <h4 class="lh-lg">Work Sans</h4>
+        <p class="lh-lg">Rubik</p>
+        <p class="mono">Inconsolata</p>
+      </div>
+      <div class="col-9">
+        <div class="col-7">
+          <h1 class="title-1 lh-1 mb-lg">title-1</h1>
+          <h1 class="title-2">title-2</h1>
+          <h1 class="title-3">title-3</h1>
+          <h1 class="title-4">title-4</h1>
+        </div>
+        <div class="col-5">
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6>h6</h6>
+          <p class="m-n">body-text (p)</p>
+          <p class="small-body m-n">small-body</p>
+        </div>
       </div>
     </div>
 
     <!-- Lorem Ipsum -->
     <div class="col-12 my-1 justify">
-      <div class="col-16 mb-sm">
-        <h1 class="mb-sm">Lorem Ipsum</h1>
-      </div>
-      <div class="col-16">
-        <p class="mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      <div class="col-12">
+        <h1 class="title-4 text-c">Lorem Ipsum</h1>
+        <p class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore
           magna aliqua. Eu consequat ac felis donec et odio. Tincidunt vitae semper quis lectus. Neque viverra justo nec
           ultrices dui sapien eget mi. Adipiscing elit ut aliquam purus sit amet. Risus nec feugiat in fermentum posuere
@@ -84,24 +101,24 @@
           tristique risus nec. Integer eget aliquet nibh praesent tristique magna sit amet purus. Nisi vitae suscipit
           tellus mauris a. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor.
         </p>
-        <p class="small-body">
-          Eu ultrices vitae auctor eu. Suspendisse potenti nullam ac tortor vitae. Mattis molestie a iaculis at erat
-          pellentesque adipiscing commodo. Massa tincidunt dui ut ornare lectus sit amet est placerat. Semper quis
-          lectus nulla at volutpat diam ut venenatis. Augue eget arcu dictum varius duis. Nisl rhoncus mattis rhoncus
-          urna neque. Augue ut lectus arcu bibendum at varius. Porta lorem mollis aliquam ut porttitor leo a. Metus
-          vulputate eu scelerisque felis. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Purus ut
-          faucibus pulvinar elementum integer enim neque volutpat. Mattis ullamcorper velit sed ullamcorper morbi
-          tincidunt ornare massa. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Vitae proin sagittis
-          nisl rhoncus mattis rhoncus. Commodo nulla facilisi nullam vehicula ipsum a arcu.</p>
+        <div class="col-4 mt-n">
+          <div class="col-12 h-h mid-grey-bg"></div>
+          <p class="col-12 bottom small-body">
+            Eu ultrices vitae auctor eu. Suspendisse potenti nullam ac tortor vitae. Mattis molestie a iaculis at erat
+            pellentesque adipiscing commodo. Massa tincidunt dui ut ornare lectus sit amet est placerat. Semper quis
+            lectus nulla at volutpat diam ut venenatis. Augue eget arcu dictum varius duis. Nisl rhoncus mattis rhoncus
+            urna neque. Augue ut lectus arcu bibendum at varius.</p>
+        </div>
       </div>
     </div>
 
     <!-- Change Fonts -->
     <div class="col-12 m-n">
-      <h4 class="my-sm lh-1">Want to change fonts? <i>Easy!</i></h4>
-      <pre>root: {
-  --font-face: <i>fonts</i>;
-  --mono-font-face: <i>fonts</i>;
+      <h4 class="my-sm lh-1">Want to change fonts? <b><i>Easy!</i></b></h4>
+      <pre class="night">:root {
+  --title-font: <span class="yellow">fonts</span>;
+  --font-face: <span class="yellow">fonts</span>;
+  --mono-font-face: <span class="yellow">fonts</span>;
 }</pre>
     </div>
 
@@ -119,9 +136,10 @@
   <div class="container mt-c relative">
     <p>Three sizes for padding, margin, height and width options.<br>Margin and padding have: top, bottom, left,
       right, vertical and sides variants.</p>
-    <pre>class="lh-lg black-bg red mt-sm pl-1"</pre>
+    <pre class="col-12">class="lh-lg black-bg red mt-sm pl-1"</pre>
   </div>
 
+  <!-- Forms -->
   <div class="container mt-c relative">
     <h3 class="lh-lg">Forms</h3>
 
@@ -160,10 +178,11 @@
 
   </div>
 
+  <!-- Colors -->
   <div class="container mt-c relative">
     <h3 class="lh-1 mb-1">Colors</h3>
 
-    <div>
+    <div class="col-12">
       <div class="col-2">
         <pre class="text-c white-bg mb-sm">white</pre>
       </div>
@@ -181,11 +200,11 @@
       </div>
 
       <div class="col-2">
-        <pre class="text-c black-bg mb-sm white">black</pre>
+        <pre class="text-c black-bg mb-sm">black</pre>
       </div>
 
       <div class="col-2">
-        <pre class="text-c dark-blue-bg mb-sm white">dark-blue</pre>
+        <pre class="text-c dark-blue-bg mb-sm">dark-blue</pre>
       </div>
 
       <div class="col-2">
@@ -226,12 +245,14 @@
       </p>
       <div class="col-6">
         <p class="lh-lg">HTML</p>
-        <code>class="green-bg yellow"</code>
-      </div>
-      <div class="col-6">
+        <code>&lt;p class="green-bg yellow">Lorem ipsum&lt;/p></code>
         <p class="lh-lg">CSS</p>
         <pre>.white                { color: var(--yellow);                             }
 .green-bg        { background-color: var(--green);      }</pre>
+      </div>
+      <div class="col-6">
+        <p class="text-c lh-lg">RENDERED</p>
+        <p class="green-bg yellow p-sm">Lorem ipsum</p>
       </div>
 
 
@@ -243,7 +264,7 @@
     <a class="button my-1 col-4 center-x text-c" href="./css/peoria-0-4-3.css" download>Download</a>
     <div class="col-12 text-c">
       <h4>Or use the remote version hosted on github</h4>
-      <code>&lt;link rel="stylesheet" href="https://dpalmer.in/Peoria/css/peoria-0-4-3.css"></code>
+      <code>&lt;link rel="stylesheet" href="https://dpalmer.in/Peoria/css/peoria-0-5-0.css"></code>
       <p class="small-body">No changes are made on older versions, once they are available.</p>
     </div>
   </div>
