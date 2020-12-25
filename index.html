@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/peoria-0-5-0.css" />
 </head>
 
-<body>
+<body class="night">
   <div class="night fullscreen">
     <div class="center-a col-6 text-c relative">
       <h1 class="title-1">Peoria</h1>
@@ -126,14 +126,6 @@
 
   </div>
 
-  <!-- Night Mode -->
-  <div class="container mt-c text-c">
-    <button class="col-4 center-x my-1" onclick="document.querySelector('body').classList.toggle('night');"
-      class="p-sm">
-      Night Mode
-    </button>
-  </div>
-
   <!-- Padding and Margin Values -->
   <div class="container mt-c relative">
     <p>Three sizes for padding, margin, height and width options.<br>Margin and padding have: top, bottom, left,
@@ -178,6 +170,14 @@
     &lt;input class="col-6" type="submit" value="Send">
 &lt;/form></pre>
 
+  </div>
+
+  <!-- Night Mode -->
+  <div class="container mt-c text-c">
+    <button class="col-4 center-x my-1" onclick="document.querySelector('body').classList.toggle('night');"
+      class="p-sm">
+      Night Mode
+    </button>
   </div>
 
   <!-- Colors -->
@@ -249,12 +249,12 @@
         <p class="lh-lg">HTML</p>
         <code>&lt;p class="green-bg yellow">Lorem ipsum&lt;/p></code>
         <p class="lh-lg">CSS</p>
-        <pre>.white                { color: var(--yellow);                             }
-.green-bg        { background-color: var(--green);      }</pre>
+        <pre>.yellow      { color: var(--yellow);                }
+.green-bg    { background-color: var(--green);      }</pre>
       </div>
       <div class="col-6">
         <p class="text-c lh-lg">RENDERED</p>
-        <p class="green-bg yellow p-sm">Lorem ipsum</p>
+        <p class="green-bg yellow">Lorem ipsum</p>
       </div>
 
 

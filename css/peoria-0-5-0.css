@@ -28,20 +28,20 @@
 :root {
     /* Colors
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    --white: #ffffff;
-    --mid-white: #D8D7D2;
-    --mid-grey: #BEBEBE;
-    --greyed-out: #979797;
+    --white: #F4F6F8;
+    --mid-white: #E4E8EB;
+    --mid-grey: #CAD0D7;
+    --greyed-out: #A9B0BB;
     --black: #151617;
-    --dark-blue: #022857;
-    --blue: #1481F6;
-    --orange: #E55E04;
-    --red: #DB173B;
-    --yellow: #FFCF53;
-    --green: #155240;
-    --pink: #FEC1C8;
-    --purple: #B08CC9;
-    --brown: #8E4C3C;
+    --dark-blue: #72768A;
+    --blue: #73B0F4;
+    --orange: #FB836F;
+    --red: #FF959D;
+    --yellow: #FFD78C;
+    --green: #B4DF80;
+    --pink: #F199CE;
+    --purple: #B3A4EE;
+    --brown: #F4D0B5;
     /* Fonts
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     --title-face: 'Work Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -261,14 +261,20 @@ a.selected                      { text-decoration: underline;              }
 -------------------------------------------------- */
 .night {
     background-color: var(--white);
-    color: var(--black);
-    --white: #060B05;
-    --mid-white: #090F0D;
-    --mid-grey: #1B1B25;
-    --greyed-out: #49475F;
-    --black: #B5B1D2;
-    --dark-blue: #41568b;
-    --blue: #284394; }
+    --white: #1E2726;
+    --mid-white: #21292C;
+    --mid-grey: #969895;
+    --greyed-out: #C6C8C7;
+    --black: #E4E8EB;
+    --dark-blue: #32364C;
+    --blue: #3971EC;
+    --orange: #e77c25;
+    --red: #CD342C;
+    --yellow: #FBA922;
+    --green: #1A8744;
+    --pink: #eb7699;
+    --purple: #9c49b6;
+    --brown: #b1815b; }
 .night .card {
     outline: 1px var(--greyed-out) solid;
     -webkit-box-shadow: none;
@@ -546,10 +552,10 @@ input[type="radio"]             { display: inline;                         }
 .mid-grey                       { color: var(--mid-grey) !important;       }
 .mid-grey-bg                    { background: var(--mid-grey) !important;  }
 .greyed-out                     { color: var(--greyed-out) !important;     }
-.greyed-out-bg                  { background: var(--greyed-out) !important }
-.dark-blue                      { color: var(--dark-blue) !important;      }
-.dark-blue-bg                   { background: var(--dark-blue) !important;
+.greyed-out-bg                  { background: var(--greyed-out) !important;
                                   color: var(--white)                      }
+.dark-blue                      { color: var(--dark-blue) !important;      }
+.dark-blue-bg                   { background: var(--dark-blue) !important; }
 .black                          { color: var(--black) !important;          }
 .black-bg                       { background: var(--black) !important;
                                   color: var(--white)                      }
@@ -562,8 +568,7 @@ input[type="radio"]             { display: inline;                         }
 .yellow                         { color: var(--yellow) !important;         }
 .yellow-bg                      { background: var(--yellow) !important;    }
 .green                          { color: var(--green) !important;          }
-.green-bg                       { background: var(--green) !important;
-                                  color: var(--white)                      }
+.green-bg                       { background: var(--green) !important;     }
 .pink                           { color: var(--pink) !important;           }
 .pink-bg                        { background: var(--pink) !important;      }
 .purple                         { color: var(--purple) !important;         }
