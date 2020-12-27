@@ -29,7 +29,7 @@
     /* Colors
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     --white: #F4F6F8;
-    --mid-white: #E4E8EB;
+    --mid-white: #F0F0F3;
     --mid-grey: #CAD0D7;
     --greyed-out: #A9B0BB;
     --black: #151617;
@@ -202,19 +202,19 @@ a.selected                      { text-decoration: underline;              }
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .card {
     padding: var(--h-col);
-    -webkit-box-shadow: 0px -20px 40px 0px #FFFFFF,
-                        0px 20px 20px 0px #D3DBE6;
-       -moz-box-shadow: 0px -20px 40px 0px #FFFFFF,
-                        0px 20px 20px 0px #D3DBE6;
-            box-shadow: 0px -20px 40px 0px #FFFFFF,
-                        0px 20px 20px 0px #D3DBE6; }
+    -webkit-box-shadow: -10px -10px 30px #fff,
+                         10px 10px 30px #aeaec040;
+       -moz-box-shadow: -10px -10px 30px #fff,
+                         10px 10px 30px #aeaec040;
+            box-shadow: -10px -10px 30px #fff,
+                         10px 10px 30px #aeaec040; }
 .card-box-shadow {
-    -webkit-box-shadow: 0px -20px 40px 0px #FFFFFF,
-                        0px 20px 20px 0px #D3DBE6;
-       -moz-box-shadow: 0px -20px 40px 0px #FFFFFF,
-                        0px 20px 20px 0px #D3DBE6;
-            box-shadow: 0px -20px 40px 0px #FFFFFF,
-                        0px 20px 20px 0px #D3DBE6; }
+    -webkit-box-shadow: -10px -10px 30px #fff,
+                         10px 10px 30px #aeaec040;
+       -moz-box-shadow: -10px -10px 30px #fff,
+                         10px 10px 30px #aeaec040;
+            box-shadow: -10px -10px 30px #fff,
+                         10px 10px 30px #aeaec040; }
 .background-cover {
     background: no-repeat center center fixed;
     background-position: center top;
