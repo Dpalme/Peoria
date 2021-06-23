@@ -2,7 +2,7 @@ import pyperclip
 
 final_string = ""
 
-colors = ["white", "mid-white", "mid-grey", "greyed-out", "black", "dark-blue", "blue", "orange", "red", "yellow", "green", "pink", "purple", "brown"]
+colors = ["white", "mid-white", "mid-grey", "greyed-out", "black", "dark-blue", "blue", "orange", "red", "yellow", "green", "pink", "purple"]
 
 for color in colors:
     final_string += """<div class="col-2">
