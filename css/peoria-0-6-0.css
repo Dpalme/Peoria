@@ -401,10 +401,10 @@ section {
 
 @media (orientation: portrait)  {
     section                     { padding: 40px;                           }
-    .grid                    { grid-template-columns: repeat(6, 1fr);   }
-    .grid-1 > .col-h            { grid-column: span 3;                     }
-    .grid-1 > .col-t            { grid-column: span 2;                     }
-    .grid-1 > .col-q            { grid-column: span 2;                     }
+    .grid                       { grid-template-columns: repeat(6, 1fr);   }
+    .grid > .col-h              { grid-column: span 3;                     }
+    .grid > .col-t              { grid-column: span 2;                     }
+    .grid > .col-q              { grid-column: span 2;                     }
 
     .col-2-o                    { grid-column-start: 1;                    }
     .col-4-o                    { grid-column-start: 2;                    }
