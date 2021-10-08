@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peoria</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/peoria-0-6-0.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/peoria-0-6-1.css" />
 
-  <script src="./peoria-3.js" type="text/javascript" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script src="./peoria-4.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SFJ138DWT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -23,11 +22,11 @@
   </script>
 </head>
 
-<body class="night">
-  <div class="fullscreen grid">
-    <div class="center-a col-6 text-c relative">
+<body>
+  <div class="fullscreen grid slide-l">
+    <div class="center-a col-6 text-c relative fade">
       <h1 class="title-1">Peoria</h1>
-      <p class="lh-lg greyed-out">A Lightweight CSS library</p>
+      <p class="greyed-out">A Lightweight CSS library</p>
       <div class="col-12 center-x">
         <span class="black-bg mob-hide"></span>
         <span class="greyed-out-bg mob-hide"></span>
@@ -37,264 +36,354 @@
     </div>
   </div>
 
-  <section>
-    <div class="grid mt-lg">
-      <div class="col-h text-r">
-        <h1>592 Lines</h1>
-        <p>Lightweight</p>
-      </div>
-      <div class="col-h">
-        <h1>Grid System</h1>
-        <p>12 columns</p>
-      </div>
-    </div>
-  </section>
+  <div class="section text-r">
+    <h1>14kb</h1>
+    <p>Lightweight</p>
+  </div>
 
   <!-- Grid -->
-  <section>
-    <div class="grid text-c lh-lg mb-lg">
+  <div class="section">
+    <h1>Grid System</h1>
+    <p>12 columns</p>
+    <div class="grid text-c lh-lg my-md">
       <div class="col-12 rounded-sm orange-bg">12</div>
       <div class="col-2 rounded-sm green-bg">2</div>
       <div class="col-4 rounded-sm blue-bg">4</div>
       <div class="col-6 rounded-sm red-bg">6</div>
     </div>
     <pre class="copy-contents">&lt;div class="grid text-c lh-lg">
-  &lt;div class="col-12 rounded-sm orange-bg">12&lt;/div>
-  &lt;div class="col-2 rounded-sm green-bg">2&lt;/div>
-  &lt;div class="col-4 rounded-sm blue-bg">4&lt;/div>
-  &lt;div class="col-6 rounded-sm red-bg">6&lt;/div>
-&lt;/div></pre>
-  </section>
+    &lt;div class="col-12 rounded-sm orange-bg">12&lt;/div>
+    &lt;div class="col-2 rounded-sm green-bg">2&lt;/div>
+    &lt;div class="col-4 rounded-sm blue-bg">4&lt;/div>
+    &lt;div class="col-6 rounded-sm red-bg">6&lt;/div>
+  &lt;/div></pre>
+  </div>
 
 
   <!-- Typography -->
-  <section>
-    <div class="grid mt-c relative">
-      <!-- Typography -->
-      <div class="col-12">
-        <h1>Typography</h1>
-        <p class="small-body">(Sourced from Google Fonts)</p>
+  <div class="section">
+    <!-- Typography -->
+    <h1>Typography</h1>
+    <p class="small">(Sourced from Google Fonts)</p>
+    <div class="grid">
+      <div class="col-2 text-r">
+        <h4 class="m-n">DM Sans</h4>
+        <p class="m-n" style="font-size: 2rem;">Roboto</p>
+        <p class="mono">DM Mono</p>
       </div>
-      <div class="col-3 text-r">
-        <h4 class="lh-lg">Work Sans</h4>
-        <p class="lh-lg">Rubik</p>
-        <p class="mono">Inconsolata</p>
+      <div class="col-6">
+        <h1 class="title-1">title-1</h1>
+        <h1 class="title-2">title-2</h1>
+        <h1 class="title-3">title-3</h1>
+        <h1 class="title-4">title-4</h1>
       </div>
-      <div class="col-9 grid">
-        <div class="col-7">
-          <h1 class="title-1 lh-1 mb-lg">title-1</h1>
-          <h1 class="title-2">title-2</h1>
-          <h1 class="title-3">title-3</h1>
-          <h1 class="title-4">title-4</h1>
-        </div>
-        <div class="col-5">
-          <h1>h1</h1>
-          <h2>h2</h2>
-          <h3>h3</h3>
-          <h4>h4</h4>
-          <h5>h5</h5>
-          <h6>h6</h6>
-          <p class="m-n">body-text (p)</p>
-          <p class="small-body m-n">small-body</p>
-        </div>
+      <div class="col-4">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>body (p)</p>
+        <p class="small">small</p>
       </div>
+    </div>
 
-      <!-- Lorem Ipsum -->
-      <div class="col-12 grid my-1 justify">
+    <!-- Lorem Ipsum -->
+    <div class="grid">
+      <div class="col-8">
         <h1 class="title-4 text-c col-12">Lorem Ipsum</h1>
-        <p class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore
-          magna aliqua. Eu consequat ac felis donec et odio. Tincidunt vitae semper quis lectus. Neque viverra justo nec
-          ultrices dui sapien eget mi. Adipiscing elit ut aliquam purus sit amet. Risus nec feugiat in fermentum posuere
-          urna nec tincidunt praesent. Amet luctus venenatis lectus magna fringilla urna porttitor. Urna et pharetra
-          pharetra massa massa ultricies. Ornare aenean euismod elementum nisi. Consectetur adipiscing elit duis
-          tristique sollicitudin nibh. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Orci
-          phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Pharetra vel turpis nunc eget lorem.
+        <p class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Eu consequat ac felis donec et odio. Tincidunt vitae semper quis lectus.
+          Neque viverra justo nec ultrices dui sapien eget mi. Adipiscing elit ut aliquam purus sit amet. Risus nec
+          feugiat in fermentum posuere urna nec tincidunt praesent. Amet luctus venenatis lectus magna fringilla urna
+          porttitor.
+          Urna et pharetra pharetra massa massa ultricies. Ornare aenean euismod elementum nisi. Consectetur adipiscing
+          elit duis tristique sollicitudin nibh. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem.
+          Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Pharetra vel turpis nunc eget
+          lorem.
           Ullamcorper velit sed ullamcorper morbi tincidunt ornare. Odio aenean sed adipiscing diam donec adipiscing
           tristique risus nec. Integer eget aliquet nibh praesent tristique magna sit amet purus. Nisi vitae suscipit
           tellus mauris a. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Eu ultrices vitae
           auctor eu. Suspendisse potenti nullam ac tortor vitae. Mattis molestie a iaculis at erat pellentesque
           adipiscing commodo.
         </p>
-        <div class="col-4 mt-n grid">
-          <div class="col-12 mid-grey-bg"></div>
-          <p class="col-12 bottom small-body">
-            Eu ultrices vitae auctor eu. Suspendisse potenti nullam ac tortor vitae. Mattis molestie a iaculis at erat
-            pellentesque adipiscing commodo. Massa tincidunt dui ut ornare lectus sit amet est placerat. Semper quis
-            lectus nulla at volutpat diam ut venenatis. Augue eget arcu dictum varius duis. Nisl rhoncus mattis rhoncus
-            urna neque. Augue ut lectus arcu bibendum at varius.</p>
-        </div>
       </div>
-
-      <!-- Change Fonts -->
-      <div class="col-12 m-n">
-        <h4 class="my-sm lh-md">Want to change fonts? <b><i>Easy!</i></b></h4>
+      <div class="col-4">
+        <!-- Change Fonts -->
+        <h4>Want to change fonts? Easy!</h4>
+        <p>open a &lt;style> tag and modify them yourself</p>
         <pre class="copy-contents">:root {
-    --title: <span class="yellow">fonts</span>;
-    --default: <span class="yellow">fonts</span>;
-    --mono: <span class="yellow">fonts</span>;
+    --title: <span class="red">fonts</span>;
+    --default: <span class="red">fonts</span>;
+    --mono: <span class="red">fonts</span>;
 }</pre>
       </div>
-
     </div>
-  </section>
+
+
+
+  </div>
 
 
   <!-- Padding and Margin Values -->
-  <section>
-    <div class="mt-c relative">
-      <p>Three sizes for padding, margin, height and width options.<br>Margin and padding have: top, bottom, left,
-        right, vertical and sides variants.</p>
-      <pre>class="lh-lg black-bg red mt-sm pl-md"</pre>
+  <div class="section">
+    <h2>Padding and Margin</h2>
+    <p>Three sizes for padding, margin, height and width options.<br>Margin and padding have: top, bottom, left,
+      right, vertical and sides variants.</p>
+    <div class="grid mb-md">
+      <h3 class="col-12">Margin</h3>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mr-sm">mr-sm</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mr-md">mr-md</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mr-lg">mr-lg</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n ml-sm">ml-sm</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n ml-md">ml-md</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n ml-lg">ml-lg</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mt-sm">mt-sm</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mt-md">mt-md</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mt-lg">mt-lg</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mb-sm">mb-sm</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mb-md">mb-md</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mb-lg">mb-lg</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mx-sm">mx-sm</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mx-md">mx-md</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n mx-lg">mx-lg</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n my-sm">my-sm</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n my-md">my-md</p>
+      </div>
+      <div class="orange-bg">
+        <p class="blue-bg m-n my-lg">my-lg</p>
+      </div>
+
+      <h3 class="col-12">Padding</h3>
+
+      <div class="green-bg pr-sm">
+        <p class="blue-bg m-n">pr-sm</p>
+      </div>
+      <div class="green-bg pr-md">
+        <p class="blue-bg m-n">pr-md</p>
+      </div>
+      <div class="green-bg pr-lg">
+        <p class="blue-bg m-n">pr-lg</p>
+      </div>
+      <div class="green-bg pl-sm">
+        <p class="blue-bg m-n">pl-sm</p>
+      </div>
+      <div class="green-bg pl-md">
+        <p class="blue-bg m-n">pl-md</p>
+      </div>
+      <div class="green-bg pl-lg">
+        <p class="blue-bg m-n">pl-lg</p>
+      </div>
+      <div class="green-bg pt-sm">
+        <p class="blue-bg m-n">pt-sm</p>
+      </div>
+      <div class="green-bg pt-md">
+        <p class="blue-bg m-n">pt-md</p>
+      </div>
+      <div class="green-bg pt-lg">
+        <p class="blue-bg m-n">pt-lg</p>
+      </div>
+      <div class="green-bg pb-sm">
+        <p class="blue-bg m-n">pb-sm</p>
+      </div>
+      <div class="green-bg pb-md">
+        <p class="blue-bg m-n">pb-md</p>
+      </div>
+      <div class="green-bg pb-lg">
+        <p class="blue-bg m-n">pb-lg</p>
+      </div>
+      <div class="green-bg px-sm">
+        <p class="blue-bg m-n">px-sm</p>
+      </div>
+      <div class="green-bg px-md">
+        <p class="blue-bg m-n">px-md</p>
+      </div>
+      <div class="green-bg px-lg">
+        <p class="blue-bg m-n">px-lg</p>
+      </div>
+      <div class="green-bg py-sm">
+        <p class="blue-bg m-n">py-sm</p>
+      </div>
+      <div class="green-bg py-md">
+        <p class="blue-bg m-n">py-md</p>
+      </div>
+      <div class="green-bg py-lg">
+        <p class="blue-bg m-n">py-lg</p>
+      </div>
     </div>
-  </section>
+    <p class="lh-lg blue-bg yellow mt-sm pl-md">margin-left</p>
+    <pre>class="lh-lg blue-bg yellow mt-sm pl-md"</pre>
+  </div>
 
   <!-- Forms -->
-  <section>
-    <div class="grid mt-c relative">
-      <h3 class="lh-lg col-12">Forms</h3>
-
+  <div class="section">
+    <h3 class="lh-lg">Forms</h3>
+    <div class="grid">
       <form class="card col-6 grid rounded-sm mb-md">
-        <div class="col-6">
+        <div class="col-6 mb-ms">
           <label for="name">Name</label>
-          <input type="name" id="name">
+          <input type="name" id="name" placeholder="* Name" required>
         </div>
-        <div class="col-6">
+        <div class="col-6 mb-ms">
           <label for="email">Email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" placeholder="* Email" required>
         </div>
         <div class="col-12 mb-sm">
           <label for="message">Message</label>
-          <textarea id="message" class="col-12 m-n"></textarea>
+          <textarea id="message" class="col-12 m-n" placeholder="* Leave a message..." required></textarea>
         </div>
-        <input class="col-6" type="submit" value="Send">
+        <input class="col-6 black yellow-bg green-btn" type="submit" value="Send">
       </form>
 
-      <pre class="col-6">
-  &lt;form class="card col-6 rounded">
-      &lt;div class="col-6">
-          &lt;label for="name">Name&lt;/label>
-          &lt;input type="name" id="name">
-      &lt;/div>
-      &lt;div class="col-6">
-          &lt;label for="email">Email&lt;/label>
-          &lt;input type="email" id="email">
-      &lt;/div>
-      &lt;div class="col-12 mb-sm">
-          &lt;label for="message">Message&lt;/label>
-          &lt;textarea id="message" class="col-12 m-n">&lt;/textarea>
-      &lt;/div>
-      &lt;input class="col-6" type="submit" value="Send">
-  &lt;/form></pre>
+      <pre class="col-6 copy-contents">
+&lt;form class="card col-6 rounded">
+    &lt;div class="col-6">
+        &lt;label for="name">Name&lt;/label>
+        &lt;input type="name" id="name">
+    &lt;/div>
+    &lt;div class="col-6">
+        &lt;label for="email">Email&lt;/label>
+        &lt;input type="email" id="email">
+    &lt;/div>
+    &lt;div class="col-12 mb-sm">
+        &lt;label for="message">Message&lt;/label>
+        &lt;textarea id="message" class="col-12 m-n">&lt;/textarea>
+    &lt;/div>
+    &lt;input class="col-6" type="submit" value="Send">
+&lt;/form></pre>
 
     </div>
-  </section>
+  </div>
 
 
   <!-- Night Mode -->
-  <section>
-    <div class="mt-c text-c">
-      <button class="night-btn">
-        Night Mode
-      </button>
-    </div>
-  </section>
+  <div class="section text-c">
+    <button class="night-btn">
+      Night Mode
+    </button>
+    <code>&lt;button class="n">Lorem ipsum&lt;/p></code>
+  </div>
 
   <!-- Colors -->
-  <section>
-    <div class="mt-c relative">
-      <h3 class="lh-1 mb-md">Colors</h3>
+  <div class="section relative">
+    <h3 class="lh-1 mb-md">Colors</h3>
 
-      <div class="grid">
-        <div class="text-c white-bg mb-sm">
-          white
-        </div>
-
-        <div class="text-c mid-white-bg mb-sm">
-          mid-white
-        </div>
-
-        <div class="text-c mid-grey-bg mb-sm">
-          mid-grey
-        </div>
-
-        <div>
-          <pre class="text-c greyed-out-bg mb-sm">greyed-out</pre>
-        </div>
-
-        <div>
-          <pre class="text-c black-bg mb-sm">black</pre>
-        </div>
-
-        <div>
-          <pre class="text-c dark-blue-bg mb-sm">dark-blue</pre>
-        </div>
-
-        <div>
-          <pre class="text-c blue-bg mb-sm">blue</pre>
-        </div>
-
-        <div>
-          <pre class="text-c orange-bg mb-sm">orange</pre>
-        </div>
-
-        <div>
-          <pre class="text-c red-bg mb-sm">red</pre>
-        </div>
-
-        <div class="text-c yellow-bg mb-sm">
-          yellow
-        </div>
-
-        <div>
-          <pre class="text-c green-bg mb-sm">green</pre>
-        </div>
-
-        <div>
-          <pre class="text-c pink-bg mb-sm">pink</pre>
-        </div>
-
-        <div>
-          <pre class="text-c purple-bg mb-sm">purple</pre>
-        </div>
-
-        <div>
-          <pre class="text-c brown-bg mb-sm">brown</pre>
-        </div>
+    <div class="grid text-c">
+      <div class="py-sm white-bg">
+        white
       </div>
 
-      <div class="grid mb-sm">
-        <p class="col-12 lh-lg text-c half-mb-sm">All colors have a class for the color and another for the background
-        </p>
-        <div class="col-6">
-          <p class="lh-lg">HTML</p>
-          <code>&lt;p class="green-bg yellow">Lorem ipsum&lt;/p></code>
-          <p class="lh-lg">CSS</p>
-          <pre>.yellow      { color: var(--yellow);                }
-  .green-bg    { background-color: var(--green);      }</pre>
-        </div>
-        <div class="col-6">
-          <p class="text-c lh-lg">RENDERED</p>
-          <p class="green-bg yellow">Lorem ipsum</p>
-        </div>
+      <div class="py-sm mid-white-bg">
+        mid-white
+      </div>
 
+      <div class="py-sm mid-grey-bg">
+        mid-grey
+      </div>
+      <div class="py-sm greyed-out-bg">
+        greyed-out
+      </div>
 
+      <div class="py-sm black-bg">
+        black
+      </div>
+
+      <div class="py-sm dark-blue-bg">
+        dark-blue
+      </div>
+
+      <div class="py-sm blue-bg">
+        blue
+      </div>
+
+      <div class="py-sm orange-bg">
+        orange
+      </div>
+
+      <div class="py-sm red-bg">
+        red
+      </div>
+
+      <div class="py-sm yellow-bg">
+        yellow
+      </div>
+
+      <div class="py-sm green-bg">
+        green
+      </div>
+
+      <div class="py-sm pink-bg">
+        pink
+      </div>
+
+      <div class="py-sm purple-bg">
+        purple
       </div>
     </div>
-  </section>
 
-  <section>
-    <div class="grid mt-c mb-c">
+    <p class="col-12 lh-lg text-c half-mb-sm">All colors have a class for the color and another for the background
+    </p>
+    <div class="grid mb-sm">
+      <div class="col-6">
+        <h3>RENDERED</h3>
+        <p class="p-sm rounded-lg text-c green-bg yellow">Lorem ipsum</p>
+      </div>
+      <div class="col-6">
+        <h3>HTML</h3>
+        <code class="mb-md copy-contents">&lt;p class="p-sm rounded-lg text-c green-bg yellow">Lorem ipsum&lt;/p></code>
+        <h3>CSS</h3>
+        <pre>.yellow      { color: var(--yellow);                }
+.green-bg    { background-color: var(--green);      }</pre>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="grid section">
       <h1 class="col-12 block lh-lg text-c">Get Peoria!</h1>
-      <a class="button my-1 col-12 center-x text-c" href="./css/peoria-0-4-3.css" download>Download</a>
-      <div class="col-12 text-c">
-        <h4 class="mb-sm">Or use the remote version hosted on github</h4>
-        <code
-          class="copy-contents">&lt;link rel="stylesheet" href="https://dpalmer.in/Peoria/css/peoria-0-6-0.css"></code>
-        <p class="small-body">No changes are made on older versions, once they are available.</p>
+      <a class="button col-6 center-x text-c h-a" href="./css/peoria-0-6-1.css" download>Download</a>
+      <div class="col-6 text-c">
+        <p class="mb-sm">Or use the remote version hosted on github</p>
+        <pre class="copy-contents">&lt;link rel="stylesheet" href="https://dpalmer.in/Peoria/css/peoria-0-6-1.min.css">
+&lt;script src="https://dpalmer.in/Peoria/peoria-4.js">&lt;/script></pre>
+        <p class="small">No changes are made on older versions, once they are available.</p>
       </div>
     </div>
-  </section>
 </body>
 
 </html>
