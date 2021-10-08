@@ -1,0 +1,67 @@
+.grid {
+    position: relative;
+    width: 100%;
+    display: grid;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-content: stretch;
+    align-items: flex-start;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--h-col);
+    grid-auto-flow: row; }
+.col-1, .col-2, .col-3,
+.col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9,
+.col-10, .col-11, .col-12,
+.col-q, .col-h, .col-t, .col-f  {
+    max-width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+#content                        { margin-bottom: var(--col-2);             }
+
+.col-1                          { grid-column: span 1;                     }
+.col-2                          { grid-column: span 2;                     }
+.col-4                          { grid-column: span 4;                     }
+.col-5                          { grid-column: span 5;                     }
+.col-3                          { grid-column: span 3;                     }
+.col-6                          { grid-column: span 6;                     }
+.col-7                          { grid-column: span 7;                     }
+.col-8                          { grid-column: span 8;                     }
+.col-9                          { grid-column: span 9;                     }
+.col-10                         { grid-column: span 10;                    }
+.col-11                         { grid-column: span 11;                    }
+.col-12                         { grid-column: span 12;                    }
+.col-f                          { grid-column: 1 / -1;                     }
+.col-h                          { grid-column: span 6;                     }
+.col-t                          { grid-column: span 4;                     }
+.col-q                          { grid-column: span 3;                     }
+
+/* Offsets */
+.col-1-o                        { grid-column-start: 1;                    }
+.col-2-o                        { grid-column-start: 2;                    }
+.col-3-o                        { grid-column-start: 3;                    }
+.col-4-o                        { grid-column-start: 4;                    }
+.col-5-o                        { grid-column-start: 5;                    }
+.col-6-o                        { grid-column-start: 6;                    }
+.col-7-o                        { grid-column-start: 7;                    }
+.col-8-o                        { grid-column-start: 8;                    }
+.col-9-o                        { grid-column-start: 9;                    }
+.col-10-o                       { grid-column-start: 10;                   }
+.col-11-o                       { grid-column-start: 11;                   }
+
+@media (orientation: portrait)  {
+    section                     { padding: 40px;                           }
+    .grid                       { grid-template-columns: repeat(6, 1fr);   }
+    .grid > .col-h              { grid-column: span 3;                     }
+    .grid > .col-t              { grid-column: span 2;                     }
+    .grid > .col-q              { grid-column: span 2;                     }
+    .col-7, .col-8, .col-9,
+    .col-10, .col-11, .col-12   { grid-column: 1 / -1;                     }
+
+    .col-2-o                    { grid-column-start: 1;                    }
+    .col-4-o                    { grid-column-start: 2;                    }
+    .col-6-o                    { grid-column-start: 3;                    }
+    .col-8-o                    { grid-column-start: 4;                    }
+    .col-10-o                   { grid-column-start: 5;                    }
+}
